@@ -32,7 +32,7 @@ $(document).ready(function () {
 	$.scrollIt({
 		upKey: 33,
 		downKey: 34,
-		scrollTime: 250,
+		scrollTime: 500,
 		topOffset: -50
 	});
 });
