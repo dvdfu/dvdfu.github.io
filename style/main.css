@@ -1,8 +1,9 @@
 /*
-	dark-green: #106038;
-	blue-green: #076;
+	dark-green: #163;
+	blue-green: #275;
 	light-green: #8b3;
-	dark-grey: #282830;
+	muddy-green: #573;
+	dark-grey: #222;
 	light-yellow: #eeb;
 */
 
@@ -23,8 +24,7 @@ body {
 h1 {
 	font-family: 'Open Sans Condensed', sans-serif;
 	text-transform: uppercase;
-	letter-spacing: 5px;
-	font-size: 80px;
+	font-size: 96px;
 	line-height: 100%;
 	margin: 0;
 }
@@ -37,12 +37,18 @@ h2 {
 p {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 20px;
-	line-height: 100%;
+	line-height: 120%;
 	margin: 0;
+}
+a, a:link, a:visited, a:hover, a:active {
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	text-decoration: none;
 }
 nav {
 	z-index: 1;
-	background-color: #282830;
+	background-color: #222;
 	position: fixed;
 	left: 0;
 	width: 100%;
@@ -51,23 +57,22 @@ nav {
 }
 nav .nav-item {
 	color: #eeb;
-	background-color: #282830;
 	display: inline-block;
 	width: 50px;
 	height: 50px;
 }
 nav .nav-item.active.title {
-	background-color: #106038;
+	background-color: #163;
 }
 nav .nav-item.active.about {
 	background-color: #8b3;
 }
 nav .nav-item.active.projects {
 	background-color: #eeb;
-	color: #282830;
+	color: #222;
 }
 nav .nav-item.active.contact {
-	background-color: #076;
+	background-color: #275;
 }
 nav .nav-item .fa {
 	top: 50%;
@@ -82,17 +87,23 @@ section {
 	text-align: center;
 	overflow: hidden;
 }
-section h1 {
+section.header {
+	height: 50px;
+}
+section.title {
+	background-color: #163;
+	color: #8b3;
+}
+section.title .text-container {
 	top: 50%;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 }
-section.header {
-	height: 50px;
+section.title h1 {
+	color: #eeb;
 }
-section.title {
-	background-color: #106038;
+section.title #cycle-text {
 	color: #eeb;
 }
 section.about {
@@ -101,21 +112,24 @@ section.about {
 }
 section.projects {
 	background-color: #eeb;
-	color: #282830;
+	color: #222;
 }
 section.contact {
-	background-color: #076;
+	background-color: #275;
 	color: #eeb;
 }
 section.footer {
-	height: 50px;
-	background-color: #282830;
+	height: 80px;
+	background-color: #222;
 	color: #eeb;
 }
 section.footer p {
-	font-size: 16px;
+	font-size: 14px;
 	top: 50%;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
+}
+section.footer p a {
+	color: #8b3;
 }
