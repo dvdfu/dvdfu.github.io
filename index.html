@@ -8,23 +8,47 @@
 
 	<link rel="icon" type="image/png" href="/img/favicon.png">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link href='http://fonts.googleapis.com/css?family=Hammersmith+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Montserrat|Lato' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="/style/main.css">
 </head>
 <body class="page">
-	<section class="container dark-green">
-		<h1>Pinetree</h1>
+	<nav>
+		<div class="nav-item" data-scroll-nav="0"><p>Home</p>
+		</div><div class="nav-item" data-scroll-nav="1"><p>About</p>
+		</div><div class="nav-item" data-scroll-nav="2"><p>Projects</p>
+		</div><div class="nav-item" data-scroll-nav="3"><p>Contact</p>
+		</div>
+	</nav>
+	<section data-scroll-index="0" class="title">
+		<h1>Home</h1>
 	</section>
-	<section class="container light-green">
-		<h1>Lime</h1>
+	<section data-scroll-index="1" class="about">
 	</section>
-	<section class="container dark-grey">
-		<h1>Avacado</h1>
+	<section data-scroll-index="2" class="projects">
 	</section>
-	<section class="container light-yellow">
-		<h1>Papyrus</h1>
+	<section data-scroll-index="3" class="contact">
+		<div class="contact-icon">
+			<i class="fa fa-github-alt"></i>
+		</div>
+		<div class="contact-icon">
+			<i class="fa fa-twitter"></i>
+		</div>
+		<div class="contact-icon">
+			<i class="fa fa-tumblr"></i>
+		</div>
+		<div class="contact-icon">
+			<i class="fa fa-linkedin"></i>
+		</div>
+		<div class="contact-icon">
+			<i class="fa fa-envelope"></i>
+		</div>
+		<!-- <div class="contact-link">
+			<h2>Contact me!</h2>
+		</div> -->
 	</section>
 
+	<script type="text/javascript" src="/script/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="/script/scrollIt.min.js"></script>
 	<script type="text/javascript" src="/script/main.js"></script>
 </body>
 </html>
