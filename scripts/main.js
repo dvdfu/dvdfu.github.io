@@ -1,3 +1,40 @@
+$(document).ready(function () {
+	analytics();
+	cycleTitle();
+
+	$.getJSON('/data/projects.json', function (data) {
+		addProjects(data.projects);
+	});
+
+	$.scrollIt({
+		upKey: 37,
+		downKey: 39,
+		scrollTime: 500,
+		topOffset: -50,
+	});
+});
+
+function addProjects(projects) {
+	var $projectList = document.getElementById('project-list');
+	projects.forEach(addProject);
+
+	function addProject(project) {
+		var $project = document.createElement('li');
+		$project.className = 'project';
+
+		var $title = document.createElement('h2');
+		$title.className = 'project-title';
+		if (project.url) {
+			$title.innerHTML = '<a href="' + project.url + '">' + project.name + '</a>';
+		} else {
+			$title.innerHTML = project.name;
+		}
+		$project.appendChild($title);
+
+		$projectList.appendChild($project);
+	}
+}
+
 function cycleTitle() {
 	var $pref = document.getElementById('cycle-prefix'),
 		$text = document.getElementById('cycle-text'),
@@ -5,7 +42,6 @@ function cycleTitle() {
 		titles = [
 			'a coder.',
 			'a musician.',
-			'a learner.',
 			'a game dev.',
 			'an artist.',
 			'a creator.',
@@ -21,21 +57,9 @@ function cycleTitle() {
 		$pref.innerHTML = pref;
 		$text.innerHTML = text;
 		index = (index + 1) % titles.length;
-		setTimeout(cycle, 500);
+		setTimeout(cycle, 1000);
 	}
 }
-
-$(document).ready(function () {
-	analytics();
-	cycleTitle();
-
-	$.scrollIt({
-		upKey: 33,
-		downKey: 34,
-		scrollTime: 500,
-		topOffset: -50
-	});
-});
 
 function analytics() {
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

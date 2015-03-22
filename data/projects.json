@@ -1,0 +1,28 @@
+{
+	"projects" : [
+		{
+			"name"  : "The Resistance",
+			"url"   : "https://play-resistance.herokuapp.com/",
+			"source": "https://github.com/dvdfu/resistance-web",
+			"date"  : "Mar 2015",
+			"img"   : "",
+			"desc"  : "A top-10 EngHack W2015 project made with one other person. This webapp is designed to be a companion app to the popular party game 'The Resistance', eliminating the need to use confusing boards, cards, and counters.",
+			"tools" : [ "Node.js", "socket.io", "Javascript", "CSS3" ]
+		}, {
+			"name"  : "Match 3",
+			"url"   : "http://match-3.herokuapp.com",
+			"source": "https://github.com/dvdfu/match-3",
+			"date"  : "Feb 2015",
+			"img"   : "",
+			"desc"  : "A winning top-3 project made in my team of four at the Kik hackathon. Players enter a real-time game room using Kik and compete to find matching patterns of 3!",
+			"tools" : [ "Node.js", "socket.io", "Kik API", "Javascript", "CSS3" ]
+		}, {
+			"name"  : "Garden Guardian",
+			"source": "https://github.com/dvdfu/winter-gi-jam",
+			"date"  : "Jan 2015",
+			"img"   : "",
+			"desc"  : "A multiplayer, turn-based strategy desktop game made solo at the Winter 2015 GI Jam, named Most Polished Game. Players compete to grow trees on a shared land while avoiding having theirs cut down.",
+			"tools" : [ "libGDX", "Java" ]
+		}
+	]
+}
