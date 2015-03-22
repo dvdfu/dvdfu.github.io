@@ -25,36 +25,41 @@ function addProjects(projects) {
 		$project.className = 'project';
 
 		// title (+link)
-		var $title = document.createElement('h2');
+		var $titleContainer = document.createElement('div'),
+			$title = document.createElement('h2');
+		$titleContainer.className = 'project-title-container';
 		$title.className = 'project-title';
+		$titleContainer.appendChild($title);
 		if (project.url) {
-			$title.innerHTML = '<a href="' + project.url + '">' + project.name + '</a>';
+			$title.innerHTML = '<a href="'+project.url+'">'+project.name+'</a>';
 		} else {
 			$title.innerHTML = project.name;
 		}
-		$project.appendChild($title);
+		$project.appendChild($titleContainer);
 
 		// image
 		if (project.img) {
-			var $container = document.createElement('div'),
+			var $imageContainer = document.createElement('div'),
 				$image = document.createElement('img');
-			$container.className = 'project-image-container';
+			$imageContainer.className = 'project-image-container';
 			$image.className = 'project-image';
-			$image.src = '/images/projects/' + project.img;
-			$container.appendChild($image);
-			var self = $container;
-			$container.onclick = function () {
+			$image.src = '/images/projects/'+project.img;
+			$imageContainer.appendChild($image);
+			var self = $imageContainer;
+			$imageContainer.onclick = function () {
 				if (self.classList.contains('opened')) {
 					self.classList.remove('opened');
 				} else {
 					self.classList.add('opened');
 				}
 			}
-			$project.appendChild($container);
+			$project.appendChild($imageContainer);
 		}
 
 		// description (+tools) (+github)
-		var $desc = document.createElement('p');
+		var $descContainer = document.createElement('div'),
+			$desc = document.createElement('p');
+		$descContainer.className = 'project-desc-container';
 		$desc.className = 'project-desc';
 		$desc.innerHTML = project.desc;
 		var extra = '';
@@ -69,10 +74,11 @@ function addProjects(projects) {
 			extra += '.</strong>';
 		}
 		if (project.source) {
-			extra += ' <a href="' + project.source + '"><i class="fa fa-github-square"></i></a>';
+			extra += '&nbsp;<a href="'+project.source+'"><i class="fa fa-github-square"></i></a>';
 		}
 		$desc.innerHTML += extra;
-		$project.appendChild($desc);
+		$descContainer.appendChild($desc);
+		$project.appendChild($descContainer);
 
 		$projectList.appendChild($project);
 	}

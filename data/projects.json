@@ -1,6 +1,14 @@
 {
 	"projects" : [
 		{
+			"name"  : "This Website",
+			"url"   : "",
+			"source": "",
+			"date"  : "Mar 2015",
+			"img"   : "personal-website.png",
+			"desc"  : "This very website. Designed vertically and mobile-friendly, this website shows off my abilities and interests. Comes in all shades of green.",
+			"tools" : [ "ScrollIt.js", "Javascript", "CSS3", "JSON" ]
+		}, {
 			"name"  : "The Resistance",
 			"url"   : "https://play-resistance.herokuapp.com/",
 			"source": "https://github.com/dvdfu/resistance-web",
@@ -22,6 +30,20 @@
 			"date"  : "Jan 2015",
 			"img"   : "garden-guardian.gif",
 			"desc"  : "A multiplayer, turn-based strategy game made solo at the Winter 2015 GI Jam. Players compete to grow, water, and cut trees on a shared land.",
+			"tools" : [ "libGDX", "Java" ]
+		}, {
+			"name"  : "UFO",
+			"source": "https://github.com/dvdfu/UFO",
+			"date"  : "Jan 2015",
+			"img"   : "UFO.gif",
+			"desc"  : "An exprimental game made to learn Box2D. Players control a UFO in a randomly generated terrain, abducting various objects that respond to physics.",
+			"tools" : [ "libGDX", "Box2D", "Java" ]
+		}, {
+			"name"  : "Fiery Flight",
+			"source": "https://github.com/dvdfu/fiery-flight",
+			"date"  : "Oct 2014",
+			"img"   : "fiery-flight.gif",
+			"desc"  : "A two player co-op game and winner of the Fall 2014 GI Jam Player's Choice Award. Players use a mouse and keyboard and try to chase their fiery predator!",
 			"tools" : [ "libGDX", "Java" ]
 		}
 	]
