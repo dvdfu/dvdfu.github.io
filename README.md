@@ -1,6 +1,6 @@
 Testing Locally
 ---
 
-* install `connect` and `serve-static` via `npm install`
+* `npm install connect serve-static`
 * `npm start`
-* visit `localhost:3000`
+* visit `localhost:5000`

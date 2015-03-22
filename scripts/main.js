@@ -3,13 +3,15 @@ $(document).ready(function () {
 	cycleTitle();
 
 	$.getJSON('/data/projects.json', function (data) {
+		var $projectError = document.getElementById('project-error');
+		if ($projectError) $projectError.style.display = 'none';
 		addProjects(data.projects);
 	});
 
 	$.scrollIt({
 		upKey: 37,
 		downKey: 39,
-		scrollTime: 500,
+		scrollTime: 250,
 		topOffset: -50,
 	});
 });
@@ -22,6 +24,7 @@ function addProjects(projects) {
 		var $project = document.createElement('li');
 		$project.className = 'project';
 
+		// title (+link)
 		var $title = document.createElement('h2');
 		$title.className = 'project-title';
 		if (project.url) {
@@ -30,6 +33,46 @@ function addProjects(projects) {
 			$title.innerHTML = project.name;
 		}
 		$project.appendChild($title);
+
+		// image
+		if (project.img) {
+			var $container = document.createElement('div'),
+				$image = document.createElement('img');
+			$container.className = 'project-image-container';
+			$image.className = 'project-image';
+			$image.src = '/images/projects/' + project.img;
+			$container.appendChild($image);
+			var self = $container;
+			$container.onclick = function () {
+				if (self.classList.contains('opened')) {
+					self.classList.remove('opened');
+				} else {
+					self.classList.add('opened');
+				}
+			}
+			$project.appendChild($container);
+		}
+
+		// description (+tools) (+github)
+		var $desc = document.createElement('p');
+		$desc.className = 'project-desc';
+		$desc.innerHTML = project.desc;
+		var extra = '';
+		if (project.tools && project.tools.length > 0) {
+			var listed = false;
+			extra += ' Made with <strong>';
+			project.tools.forEach(function (tool) {
+				if (listed) extra += ', ';
+				extra += tool;
+				listed = true;
+			});
+			extra += '.</strong>';
+		}
+		if (project.source) {
+			extra += ' <a href="' + project.source + '"><i class="fa fa-github-square"></i></a>';
+		}
+		$desc.innerHTML += extra;
+		$project.appendChild($desc);
 
 		$projectList.appendChild($project);
 	}
@@ -62,11 +105,7 @@ function cycleTitle() {
 }
 
 function analytics() {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})
-
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})
 	(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 	ga('create', 'UA-54888428-1', 'auto');
 	ga('send', 'pageview');
