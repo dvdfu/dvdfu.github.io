@@ -1,12 +1,19 @@
 /*
-	dark-green: #163;
-	blue-green: #275;
-	light-green: #8b3;
-	white-green: #bd5;
+	GREENS;
+	dark: #163;
+	mid: #493;
 	muddy-green: #573;
+	light: #8b3;
+	bluish: #275;
+	whitish: #bd5;
+
+	GREYS;
 	dark-grey: #222;
-	light-yellow: #eeb;
-	dark-light-yellow: #cc9;
+
+	YELLOWS;
+	mid: #ef8;
+	light: #eeb;
+	dark-light: #cc9;
 */
 
 * {
@@ -50,6 +57,8 @@ a, a:link, a:visited, a:hover, a:active {
 }
 ul {
 	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 /* NAV */
@@ -57,6 +66,7 @@ nav {
 	z-index: 1;
 	background-color: #222;
 	position: fixed;
+	top: 0;
 	left: 0;
 	width: 100%;
 	height: 50px;
@@ -92,14 +102,9 @@ nav .nav-item .fa {
 /* SECTIONS */
 section {
 	width: 100%;
-	height: 700px;
 	padding: 10px;
 	text-align: center;
 	overflow: hidden;
-}
-section.header {
-	height: 50px;
-	background-color: #222;
 }
 section.footer {
 	height: 80px;
@@ -118,16 +123,17 @@ section.footer p a {
 }
 section.extend {
 	background-color: #222;
-	height: 50vh;
+	height: calc(100vh - 130px);
 }
 
 /* TITLE SECTION */
 section.title {
-	height: 480px;
+	height: calc(100vh - 50px);
+	margin-top: 50px;
 	background-color: #163;
 	color: #8b3;
 }
-section.title .text-container {
+section.title .container {
 	top: 50%;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
@@ -140,7 +146,20 @@ section.title h1, #cycle-text {
 /* ABOUT SECTION */
 section.about {
 	background-color: #8b3;
-	color: #eeb;
+	color: #ef8;
+	padding: 80px 0;
+}
+section.about .container {
+	text-align: center;
+}
+section.about .container h2 {
+	display: inline-block;
+	font-size: 28px;
+	line-height: 120%;
+	width: 60%;
+}
+section.about .container h2 strong {
+	color: #fff;
 }
 
 /* PROJECTS SECTION */
@@ -149,13 +168,9 @@ section.projects {
 	color: #222;
 	text-align: center;
 	height: auto;
-	padding: 80px 0;
-}
-section.projects ul#project-list {
-	margin: 0;
 	padding: 0;
 }
-section.projects li.project {
+section.projects .project {
 	display: inline-block;
 	/*float: left;*/
 	overflow: hidden;
@@ -164,20 +179,20 @@ section.projects li.project {
 	background-color: #cc9;
 	margin: 10px;
 }
-section.projects li.project div.project-title-container {
+section.projects .project .project-title {
 	display: inline-block;
 	float: left;
 	width: 100%;
 	height: 60px;
 }
-section.projects li.project h2.project-title {
+section.projects .project .project-title h2 {
 	font-size: 24px;
 	top: 50%;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 }
-section.projects li.project div.project-image-container {
+section.projects .project .project-image {
 	display: inline-block;
 	float: left;
 	overflow: hidden;
@@ -185,10 +200,10 @@ section.projects li.project div.project-image-container {
 	height: 160px;
 	transition: height 0.5s;
 }
-section.projects li.project div.project-image-container.opened {
+section.projects .project .project-image.opened {
 	height: 360px;
 }
-section.projects li.project img.project-image {
+section.projects .project .project-image img {
 	width: 200%;
 	top: 50%;
 	left: 50%;
@@ -196,14 +211,14 @@ section.projects li.project img.project-image {
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 }
-section.projects li.project div.project-desc-container {
+section.projects .project .project-desc {
 	display: inline-block;
 	float: left;
 	width: 100%;
 	height: 130px;
 	padding: 0 20px;
 }
-section.projects li.project p.project-desc {
+section.projects .project .project-desc p {
 	text-align: left;
 	top: 50%;
 	transform: translateY(-50%);
@@ -213,8 +228,23 @@ section.projects li.project p.project-desc {
 
 /* CONTACT SECTION */
 section.contact {
+	height: 400px;
 	background-color: #275;
 	color: #eeb;
+}
+section.contact .container {
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+section.contact .container h2 {
+	margin-bottom: 10px;
+	color: #ef8;
+}
+section.contact .container a {
+	display: inline-block;
+	margin: 0 6px;
 }
 
 /* TARGET DEVICES */
@@ -230,5 +260,9 @@ section.contact {
 	}
 	section.projects li.project {
 		width: 300px;
+	}
+	section.about .container h2 {
+		width: 90%;
+		font-size: 22px;
 	}
 }

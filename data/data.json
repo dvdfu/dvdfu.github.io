@@ -46,5 +46,13 @@
 			"desc"  : "A two player co-op game and winner of the Fall 2014 GI Jam Player's Choice Award. Players use a mouse and keyboard and try to chase their fiery predator!",
 			"tools" : [ "libGDX", "Java" ]
 		}
+	],
+	"contacts" : [
+		{
+			"title": "Github",
+			"fa"   : "github",
+			"url"  : "https://github.com/dvdfu",
+			"name" : "dvdfu"
+		}
 	]
 }

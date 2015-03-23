@@ -1,8 +1,9 @@
 $(document).ready(function () {
 	analytics();
+	loadSections();
 	cycleTitle();
 
-	$.getJSON('/data/projects.json', function (data) {
+	$.getJSON('/data/data.json', function (data) {
 		var $projectError = document.getElementById('project-error');
 		if ($projectError) $projectError.style.display = 'none';
 		addProjects(data.projects);
@@ -11,10 +12,14 @@ $(document).ready(function () {
 	$.scrollIt({
 		upKey: 37,
 		downKey: 39,
-		scrollTime: 250,
+		scrollTime: 500,
 		topOffset: -50,
 	});
 });
+
+function loadSections() {
+	var secs = document.getElementsByClassName('sec');
+}
 
 function addProjects(projects) {
 	var $projectList = document.getElementById('project-list');
@@ -27,8 +32,7 @@ function addProjects(projects) {
 		// title (+link)
 		var $titleContainer = document.createElement('div'),
 			$title = document.createElement('h2');
-		$titleContainer.className = 'project-title-container';
-		$title.className = 'project-title';
+		$titleContainer.className = 'project-title';
 		$titleContainer.appendChild($title);
 		if (project.url) {
 			$title.innerHTML = '<a href="'+project.url+'">'+project.name+'</a>';
@@ -41,8 +45,7 @@ function addProjects(projects) {
 		if (project.img) {
 			var $imageContainer = document.createElement('div'),
 				$image = document.createElement('img');
-			$imageContainer.className = 'project-image-container';
-			$image.className = 'project-image';
+			$imageContainer.className = 'project-image';
 			$image.src = '/images/projects/'+project.img;
 			$imageContainer.appendChild($image);
 			var self = $imageContainer;
@@ -59,8 +62,7 @@ function addProjects(projects) {
 		// description (+tools) (+github)
 		var $descContainer = document.createElement('div'),
 			$desc = document.createElement('p');
-		$descContainer.className = 'project-desc-container';
-		$desc.className = 'project-desc';
+		$descContainer.className = 'project-desc';
 		$desc.innerHTML = project.desc;
 		var extra = '';
 		if (project.tools && project.tools.length > 0) {
