@@ -23,6 +23,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	background-color: #222;
 }
 .page {
 	width: 100%;
@@ -102,12 +103,15 @@ nav .nav-item .fa {
 /* SECTIONS */
 section {
 	width: 100%;
-	padding: 10px;
+	padding: 0 0 50px 0;
 	text-align: center;
 	overflow: hidden;
+	margin-bottom: -50px;
 }
 section.footer {
 	height: 80px;
+	padding: 0;
+	margin-bottom: 0;
 	background-color: #222;
 	color: #eeb;
 }
@@ -121,17 +125,13 @@ section.footer p {
 section.footer p a {
 	color: #8b3;
 }
-section.extend {
-	background-color: #222;
-	height: calc(100vh - 130px);
-}
 
 /* TITLE SECTION */
 section.title {
-	height: calc(100vh - 50px);
-	margin-top: 50px;
+	height: 100vh;
 	background-color: #163;
 	color: #8b3;
+	margin-top: 50px;
 }
 section.title .container {
 	top: 50%;
@@ -147,10 +147,14 @@ section.title h1, #cycle-text {
 section.about {
 	background-color: #8b3;
 	color: #ef8;
-	padding: 80px 0;
+	height: 100vh;
+	text-align: center;
 }
 section.about .container {
-	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
 }
 section.about .container h2 {
 	display: inline-block;
@@ -168,7 +172,6 @@ section.projects {
 	color: #222;
 	text-align: center;
 	height: auto;
-	padding: 0;
 }
 section.projects .project {
 	display: inline-block;
@@ -228,7 +231,7 @@ section.projects .project .project-desc p {
 
 /* CONTACT SECTION */
 section.contact {
-	height: 400px;
+	height: 100vh;
 	background-color: #275;
 	color: #eeb;
 }

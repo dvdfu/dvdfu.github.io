@@ -1,29 +1,57 @@
 $(document).ready(function () {
 	analytics();
-	loadSections();
 	cycleTitle();
 
 	$.getJSON('/data/data.json', function (data) {
 		var $projectError = document.getElementById('project-error');
 		if ($projectError) $projectError.style.display = 'none';
-		addProjects(data.projects);
-	});
-
-	$.scrollIt({
-		upKey: 37,
-		downKey: 39,
-		scrollTime: 500,
-		topOffset: -50,
+		addProjects(data.projects, scrolling);
 	});
 });
 
-function loadSections() {
-	var secs = document.getElementsByClassName('sec');
+function scrolling() {
+	var sections = document.getElementsByClassName('sec'),
+		sectionsY = [],
+		activeSection = -1;
+	[].forEach.call(sections, function (section) {
+		sectionsY.push(section.getBoundingClientRect().top + window.pageYOffset - 50);
+	});
+	scroll();
+	$('[scroll-nav]').click(function () {
+		var index = $(this).attr('scroll-nav'),
+			top = $('[scroll-index=' + index + ']').offset().top - 50;
+		$('html,body').animate({
+			scrollTop: top,
+			easing: 'easeIn'
+		}, 500);
+	});
+
+	window.onscroll = scroll;
+
+	function scroll() {
+		var windowY = window.pageYOffset,
+			newSection = activeSection;
+		for (var i = 0, len = sectionsY.length; i < len; i++) {
+			if (windowY >= sectionsY[i]) {
+				newSection = i;
+			}
+		}
+		if (newSection !== activeSection) {
+			changeSection(newSection);
+		}
+	}
+
+	function changeSection(section) {
+		activeSection = section;
+		$('[scroll-nav]').removeClass('active');
+		$('[scroll-nav=' + section + ']').addClass('active');
+	}
 }
 
-function addProjects(projects) {
+function addProjects(projects, callback) {
 	var $projectList = document.getElementById('project-list');
 	projects.forEach(addProject);
+	callback();
 
 	function addProject(project) {
 		var $project = document.createElement('li');
