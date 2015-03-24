@@ -7,7 +7,7 @@
 			"date"  : "Mar 2015",
 			"img"   : "personal-website.png",
 			"desc"  : "This very website. Designed vertically and mobile-friendly, this website shows off my abilities and interests. Comes in all shades of green.",
-			"tools" : [ "ScrollIt.js", "Javascript", "CSS3", "JSON" ]
+			"tools" : [ "jQuery", "Javascript", "CSS3", "JSON" ]
 		}, {
 			"name"  : "The Resistance",
 			"url"   : "https://play-resistance.herokuapp.com/",
@@ -32,7 +32,7 @@
 			"desc"  : "A multiplayer, turn-based strategy game made solo at the Winter 2015 GI Jam. Players compete to grow, water, and cut trees on a shared land.",
 			"tools" : [ "libGDX", "Java" ]
 		}, {
-			"name"  : "UFO",
+			"name"  : "UFO Game",
 			"source": "https://github.com/dvdfu/UFO",
 			"date"  : "Jan 2015",
 			"img"   : "UFO.gif",

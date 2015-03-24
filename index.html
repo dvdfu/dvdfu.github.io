@@ -13,13 +13,13 @@
 </head>
 <body class="page">
 	<nav>
-		<div class="nav-item title" scroll-nav="0"><i class="fa fa-2x fa-home"></i>
-		</div><div class="nav-item about" scroll-nav="1"><i class="fa fa-2x fa-info"></i>
-		</div><div class="nav-item projects" scroll-nav="2"><i class="fa fa-2x fa-laptop"></i>
-		</div><div class="nav-item contact" scroll-nav="3"><i class="fa fa-2x fa-at"></i>
+		<div class="nav-item title" data-scroll-nav="0"><i class="fa fa-2x fa-home"></i>
+		</div><div class="nav-item about" data-scroll-nav="1"><i class="fa fa-2x fa-info"></i>
+		</div><div class="nav-item projects" data-scroll-nav="2"><i class="fa fa-2x fa-laptop"></i>
+		</div><div class="nav-item contact" data-scroll-nav="3"><i class="fa fa-2x fa-at"></i>
 		</div>
 	</nav>
-	<section class="sec title" scroll-index="0">
+	<section class="sec title" data-scroll-index="0">
 		<div class="container">
 			<h1>David Fu</h1>
 			<h2>
@@ -29,20 +29,23 @@
 		</div>
 	</section>
 
-	<section class="sec about" scroll-index="1">
+	<section class="sec about" data-scroll-index="1">
 		<div class="container">
 			<h1>About Me</h1>
 			<h2>I'm 19 years old and study as a <strong>Software Engineer</strong> at the <strong>University of Waterloo.</strong> I love learning creative and technical things, turning ideas into projects, and sharing them with people.</h2>
 		</div>
 	</section>
 
-	<section class="sec projects" scroll-index="2">
-		<ul id="project-list">
-			<li class="project" id="project-error">Sorry - something must have went wrong!</li>
-		</ul>
+	<section class="sec projects" data-scroll-index="2">
+		<div class="container">
+			<h1>Projects</h1>
+			<ul id="project-list">
+				<li class="project" id="project-error">Sorry - something must have went wrong!</li>
+			</ul>
+		</div>
 	</section>
 
-	<section class="sec contact" scroll-index="3">
+	<section class="sec contact" data-scroll-index="3">
 		<div class="container">
 			<h2>Keep in touch!</h2>
 			<ul>
@@ -60,13 +63,12 @@
 		<strong>
 			<a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>&nbsp;&middot;&nbsp;
 			<a href="http://www.google.com/fonts">Google Fonts</a>&nbsp;&middot;&nbsp;
-			<a href="http://jquery.com/">jQuery</a>&nbsp;&middot;&nbsp;
+			<a href="http://jquery.com/">jQuery</a>
 		</strong>
 		</p>
 	</section>
 
 	<script type="text/javascript" src="/scripts/jquery-1.11.2.min.js"></script>
-	<script type="text/javascript" src="/scripts/scrollIt.js"></script>
 	<script type="text/javascript" src="/scripts/main.js"></script>
 </body>
 </html>

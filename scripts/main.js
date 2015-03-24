@@ -10,41 +10,43 @@ $(document).ready(function () {
 });
 
 function scrolling() {
-	var sections = document.getElementsByClassName('sec'),
-		sectionsY = [],
-		activeSection = -1;
-	[].forEach.call(sections, function (section) {
-		sectionsY.push(section.getBoundingClientRect().top + window.pageYOffset - 50);
-	});
+	var activeSection = -1;
+	getTop.cache = {};
 	scroll();
-	$('[scroll-nav]').click(function () {
-		var index = $(this).attr('scroll-nav'),
-			top = $('[scroll-index=' + index + ']').offset().top - 50;
-		$('html,body').animate({
-			scrollTop: top,
-			easing: 'easeIn'
-		}, 500);
+	window.onscroll = scroll;
+	window.addEventListener('resize', function() {
+		getTop.cache = {};
 	});
 
-	window.onscroll = scroll;
+	$('[data-scroll-nav]').click(function () {
+		var index = $(this).attr('data-scroll-nav');
+		window.scrollTo(0, getTop(index));
+	});
 
 	function scroll() {
 		var windowY = window.pageYOffset,
 			newSection = activeSection;
-		for (var i = 0, len = sectionsY.length; i < len; i++) {
-			if (windowY >= sectionsY[i]) {
-				newSection = i;
+		[0,1,2,3].forEach(function (index) {
+			if (windowY >= getTop(index)) {
+				newSection = index;
 			}
-		}
+		})
 		if (newSection !== activeSection) {
 			changeSection(newSection);
 		}
 	}
 
+	function getTop(index) {
+		if (getTop.cache[index]) return getTop.cache[index];
+		var $element = $('[data-scroll-index='+index+']');
+		getTop.cache[index] = $element.offset().top - 50;
+		return getTop.cache[index];
+	}
+
 	function changeSection(section) {
 		activeSection = section;
-		$('[scroll-nav]').removeClass('active');
-		$('[scroll-nav=' + section + ']').addClass('active');
+		$('[data-scroll-nav]').removeClass('active');
+		$('[data-scroll-nav=' + section + ']').addClass('active');
 	}
 }
 
@@ -125,6 +127,7 @@ function cycleTitle() {
 			'an artist.',
 			'a creator.',
 			'a designer.',
+			'a smasher.',
 		];
 
 	cycle(0);
