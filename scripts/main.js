@@ -26,7 +26,7 @@ function scrolling() {
 	function scroll() {
 		var windowY = window.pageYOffset,
 			newSection = activeSection;
-		[0,1,2,3].forEach(function (index) {
+		[0,1,2].forEach(function (index) {
 			if (windowY >= getTop(index)) {
 				newSection = index;
 			}
@@ -128,6 +128,7 @@ function cycleTitle() {
 			'a creator.',
 			'a designer.',
 			'a smasher.',
+			'a blogger.',
 		];
 
 	cycle(0);

@@ -103,14 +103,30 @@ section {
 	margin-bottom: -50px;
 }
 section.footer {
-	height: 80px;
+	height: 320px;
 	padding: 0;
 	margin-bottom: 0;
 	background-color: #222;
 	color: #eeb;
 }
+section.footer .container {
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+section.footer h2 {
+	margin-bottom: 10px;
+	color: #ef8;
+}
+section.footer ul a {
+	display: inline-block;
+	margin: 0 6px;
+}
+section.footer ul {
+	margin-bottom: 30px;
+}
 section.footer p {
-	font-size: 14px;
 	top: 50%;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
@@ -183,7 +199,7 @@ section.projects .project {
 	overflow: hidden;
 	width: 360px;
 	padding: 0;
-	background-color: #cc9;
+	background-color: #fff;
 	margin: 10px;
 }
 section.projects .project .project-title {
@@ -198,6 +214,10 @@ section.projects .project .project-title h2 {
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
+}
+
+section.projects .project strong {
+	color: #163;
 }
 section.projects .project .project-image {
 	display: inline-block;
@@ -231,27 +251,6 @@ section.projects .project .project-desc p {
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
-}
-
-/* CONTACT SECTION */
-section.contact {
-	height: 100vh;
-	background-color: #275;
-	color: #eeb;
-}
-section.contact .container {
-	top: 50%;
-	transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-}
-section.contact .container h2 {
-	margin-bottom: 10px;
-	color: #ef8;
-}
-section.contact .container a {
-	display: inline-block;
-	margin: 0 6px;
 }
 
 /* TARGET DEVICES */

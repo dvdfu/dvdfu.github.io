@@ -1,6 +1,22 @@
 {
 	"projects" : [
 		{
+			"name"  : "Hop Potato",
+			"url"   : "",
+			"source": "https://github.com/dvdfu/hop-potato",
+			"date"  : "Apr 2015",
+			"img"   : "hop-potato.gif",
+			"desc"  : "A multiplayer party game that brings up to 8 players together in an intense, manic game of hot potato. Made in a team of three and winner of the Kik Hack Week, April 2015.",
+			"tools" : [ "Love2D, Lua" ]
+		}, {
+			"name"  : "Filespace",
+			"url"   : "https://filespace.herokuapp.com/",
+			"source": "https://github.com/AndyF/filespace",
+			"date"  : "Mar 2015",
+			"img"   : "filespace.png",
+			"desc"  : "A webapp that aggregates online file storages like Dropbox into one interface. Built in a team of four at Hack Western 2015.",
+			"tools" : [ "Node.js, Javascript, jQuery, Dropbox API, Google Drive API, Galaxy UI" ]
+		}, {
 			"name"  : "This Website",
 			"url"   : "",
 			"source": "",
@@ -45,6 +61,14 @@
 			"img"   : "fiery-flight.gif",
 			"desc"  : "A two player co-op game and winner of the Fall 2014 GI Jam Player's Choice Award. Players use a mouse and keyboard and try to chase their fiery predator!",
 			"tools" : [ "libGDX", "Java" ]
+		}, {
+			"name"  : "Wordasm",
+			"url"	: "http://wordasm.herokuapp.com/",
+			"source": "https://github.com/Nosajool/Wordasm",
+			"date"  : "Sept 2014",
+			"img"   : "wordasm.png",
+			"desc"  : "A chatroom/word game hybrid where players compete in real-time to find words in a short time. Made for Hack the North 2014.",
+			"tools" : [ "Node.js", "socket.io", "Javascript", "Facebook API", "Bootstrap" ]
 		}
 	],
 	"contacts" : [
