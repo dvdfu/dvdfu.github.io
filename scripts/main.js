@@ -1,13 +1,11 @@
 // elements
 var $projectError = document.getElementById('project-error'),
 	$projectList = document.getElementById('project-list'),
-	$pref = document.getElementById('cycle-prefix'),
-	$text = document.getElementById('cycle-text'),
+	$factList = document.getElementById('fact-list'),
+	$cyclePref = document.getElementById('cycle-prefix'),
+	$cycleText = document.getElementById('cycle-text'),
 	$overlay = document.getElementById('overlay'),
 	$overlayContainer = document.getElementById('overlay-container');
-
-// global vars
-var pageData;
 
 // on ready
 $(document).ready(function () {
@@ -16,15 +14,14 @@ $(document).ready(function () {
 	$overlay.onclick = hideImage;
 
 	$.getJSON('/data/data.json', function (data) {
-		pageData = data;
 		if ($projectError) {
 			$projectError.style.display = 'none';
 		}
 		addProjects(data.projects, scrolling);
+		addFacts(data.facts);
 	});
 
 	function hideImage() {
-		$overlayContainer.innerHTML = '';
 		$overlay.className = 'hidden';
 	}
 });
@@ -71,6 +68,31 @@ function scrolling() {
 		activeSection = section;
 		$('[data-scroll-nav]').removeClass('active');
 		$('[data-scroll-nav=' + section + ']').addClass('active');
+	}
+}
+
+// loat facts
+function addFacts(facts) {
+	facts.forEach(addFact);
+
+	function addFact(fact) {
+		console.log(fact.name);
+		var $fact = document.createElement('li'),
+			$circle = document.createElement('div'),
+			$title = document.createElement('h2'),
+			$desc = document.createElement('p');
+		$fact.className = 'fact';
+		$factList.appendChild($fact);
+
+		$circle.className = 'fact-circle';
+		$circle.innerHTML = '<i class="fact-icon fa fa-4x '+fact.icon+'"></i>';
+		$fact.appendChild($circle);
+
+		$title.innerHTML = fact.name;
+		$fact.appendChild($title);
+
+		$desc.innerHTML = fact.desc;
+		$fact.appendChild($desc);
 	}
 }
 
@@ -145,6 +167,7 @@ function addProjects(projects, callback) {
 		var $image = document.createElement('img'),
 			$desc = document.createElement('p');
 		$image.src = image;
+		$overlayContainer.innerHTML = '';
 		$overlayContainer.appendChild($image);
 		if (description) {
 			$desc.innerHTML = description;
@@ -173,8 +196,8 @@ function cycleTitle() {
 		var str = titles[index],
 			pref = str.substring(0, str.indexOf(' ')),
 			text = str.substring(str.indexOf(' '));
-		$pref.innerHTML = pref;
-		$text.innerHTML = text;
+		$cyclePref.innerHTML = pref;
+		$cycleText.innerHTML = text;
 		index = (index + 1) % titles.length;
 		setTimeout(cycle, 1000);
 	}

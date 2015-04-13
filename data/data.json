@@ -1,4 +1,23 @@
 {
+	"facts" : [
+		{
+			"name"  : "Study",
+			"icon"  : "fa-book",
+			"desc"  : "Currently a 19-year old 2B Software Engineer at the University of Waterloo. I've been having a blast so far!"
+		}, {
+			"name"  : "Code",
+			"icon"  : "fa-code",
+			"desc"  : "Aspiring JavaScript and Node.js web developer. I also use Java. Then there's Python, C++, C, Lua, Ruby/Rails..."
+		}, {
+			"name"  : "Game",
+			"icon"  : "fa-gamepad",
+			"desc"  : "Ultra-passionate indie game developer. I've used libGDX, Love2D, Unity, and am learning everyday."
+		}, {
+			"name"  : "Art",
+			"icon"  : "fa-paint-brush",
+			"desc"  : "I love to draw digitally in my spare time! I've made artwork of all kinds and sold some at conventions."
+		}
+	],
 	"projects" : [
 		{
 			"name"  : "Hop Potato",
