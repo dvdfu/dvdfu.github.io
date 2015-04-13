@@ -17,8 +17,9 @@ $(document).ready(function () {
 		if ($projectError) {
 			$projectError.style.display = 'none';
 		}
-		addProjects(data.projects, scrolling);
-		addFacts(data.facts);
+		addFacts(data.facts, function() {
+			addProjects(data.projects, scrolling);
+		});
 	});
 
 	function hideImage() {
@@ -72,8 +73,9 @@ function scrolling() {
 }
 
 // loat facts
-function addFacts(facts) {
+function addFacts(facts, callback) {
 	facts.forEach(addFact);
+	callback()
 
 	function addFact(fact) {
 		console.log(fact.name);
