@@ -6,7 +6,7 @@
 			"source": "https://github.com/dvdfu/hop-potato",
 			"date"  : "Apr 2015",
 			"img"   : "hop-potato.gif",
-			"desc"  : "A multiplayer party game that brings up to 8 players together in an intense, manic game of hot potato. Made in a team of three and winner of the Kik Hack Week, April 2015.",
+			"desc"  : "A multiplayer party game that brings up to 8 players together in an intense, manic game of hot potato. Made in a team of three and winner of Kik Hack Week 15.04.",
 			"tools" : [ "Love2D, Lua" ]
 		}, {
 			"name"  : "Filespace",
@@ -15,11 +15,11 @@
 			"date"  : "Mar 2015",
 			"img"   : "filespace.png",
 			"desc"  : "A webapp that aggregates online file storages like Dropbox into one interface. Built in a team of four at Hack Western 2015.",
-			"tools" : [ "Node.js, Javascript, jQuery, Dropbox API, Google Drive API, Galaxy UI" ]
+			"tools" : [ "Node.js, jQuery, Dropbox API, Google Drive API" ]
 		}, {
-			"name"  : "This Website",
-			"url"   : "",
-			"source": "",
+			"name"  : "My Website",
+			"url"   : "http://dvdfu.me/",
+			"source": "https://github.com/dvdfu/dvdfu.github.io",
 			"date"  : "Mar 2015",
 			"img"   : "personal-website.png",
 			"desc"  : "This very website. Designed vertically and mobile-friendly, this website shows off my abilities and interests. Comes in all shades of green.",
@@ -38,17 +38,17 @@
 			"source": "https://github.com/dvdfu/match-3",
 			"date"  : "Feb 2015",
 			"img"   : "match-3.png",
-			"desc"  : "Winning top-3 project at the Kik hackathon. Players enter an online game room using Kik and compete in real-time to find matching patterns of 3!",
+			"desc"  : "Top-3 project at the Kik hackathon. Players enter a game room using Kik and compete in real-time to find matching patterns!",
 			"tools" : [ "Node.js", "socket.io", "Kik API", "Javascript", "CSS3" ]
 		}, {
-			"name"  : "Garden Guardian",
+			"name"  : "Garden Guard",
 			"source": "https://github.com/dvdfu/winter-gi-jam",
 			"date"  : "Jan 2015",
 			"img"   : "garden-guardian.gif",
 			"desc"  : "A multiplayer, turn-based strategy game made solo at the Winter 2015 GI Jam. Players compete to grow, water, and cut trees on a shared land.",
 			"tools" : [ "libGDX", "Java" ]
 		}, {
-			"name"  : "UFO Game",
+			"name"  : "Little UFO",
 			"source": "https://github.com/dvdfu/UFO",
 			"date"  : "Jan 2015",
 			"img"   : "UFO.gif",
