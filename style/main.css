@@ -3,7 +3,6 @@
 	dg: #222223; dark grey
 	pu: #403f4c; purple
 
-	gd: #226f54; darkish greenblue
 	lg: #9fff40; lime green
 
 	ll: #fafff3; beige
@@ -18,6 +17,9 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #222223;
+}
+::-webkit-scrollbar { 
+    display: none; 
 }
 .page {
 	width: 100%;
@@ -145,9 +147,22 @@ section.title {
 	margin-top: 50px;
 	text-align: center;
 }
-section.title .container {
+section.title .circle {
 	display: inline-block;
-	width: 90%;
+	width: 100vw;
+	height: 100vw;
+	max-width: 480px;
+	max-height: 480px;
+	border-radius: 50%;
+	background-color: #222223;
+	/*border: 4px solid #9fff40;*/
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+section.title .circle .inner {
+	display: inline-block;
 	top: 50%;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
@@ -333,5 +348,9 @@ section.footer p a {
 	}
 	p {
 		font-size: 16px;
+	}
+	section.title .circle {
+		max-width: 320px;
+		max-height: 320px;
 	}
 }
