@@ -1,11 +1,16 @@
 // elements
 var $projectError = document.getElementById('project-error'),
 	$projectList = document.getElementById('project-list'),
+	$factError = document.getElementById('fact-error'),
 	$factList = document.getElementById('fact-list'),
 	$cyclePref = document.getElementById('cycle-prefix'),
 	$cycleText = document.getElementById('cycle-text'),
 	$overlay = document.getElementById('overlay'),
 	$overlayContainer = document.getElementById('overlay-container');
+
+// consts
+var projectWidth = 320,
+	factWidth = 220;
 
 // on ready
 $(document).ready(function () {
@@ -17,6 +22,9 @@ $(document).ready(function () {
 		if ($projectError) {
 			$projectError.style.display = 'none';
 		}
+		if ($factError) {
+			$factError.style.display = 'none';
+		}
 		addFacts(data.facts, function() {
 			addProjects(data.projects, scrolling);
 		});
@@ -27,13 +35,22 @@ $(document).ready(function () {
 	}
 });
 
+function fitItems() {
+	$projectList.style.width = Math.floor($(window).width() / projectWidth) * projectWidth + 'px';
+	for (var i = factWidth, maxWidth = $(window).width(); i < maxWidth && i <= factWidth * 4; i *= 2) {
+		$factList.style.width = i + 'px';
+	}
+}
+
 // nav scrolling
 function scrolling() {
+	fitItems();
 	var activeSection = -1;
 	getTop.cache = {};
 	scroll();
 	window.onscroll = scroll;
 	window.addEventListener('resize', function() {
+		fitItems();
 		getTop.cache = {};
 	});
 

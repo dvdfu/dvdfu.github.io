@@ -167,8 +167,13 @@ section.about {
 section.about .container {
 	margin: 40px 0;
 }
+section.about #fact-list {
+	display: inline-block;
+	width: 220px;
+}
 section.about .fact {
-	display: inline-table;
+	display: inline-block;
+	float: left;
 	color: #222223;
 	width: 200px;
 	height: 280px;
@@ -209,10 +214,15 @@ section.projects .container {
 section.projects .container h1 {
 	margin-bottom: 40px;
 }
+section.projects .container #project-list {
+	display: inline-block;
+	width: 320px;
+}
 section.projects .project {
-	display: inline-table;
+	display: inline-block;
+	float: left;
 	overflow: hidden;
-	width: 360px;
+	width: 300px;
 	padding: 0;
 	background-color: #fafff3;
 	margin: 10px;
@@ -228,7 +238,7 @@ section.projects .project .project-title {
 section.projects .project .project-title h2 {
 	display: inline-block;
 	float: left;
-	font-size: 24px;
+	font-size: 22px;
 	color: #304848;
 	top: 50%;
 	transform: translateY(-50%);
@@ -323,8 +333,5 @@ section.footer p a {
 	}
 	p {
 		font-size: 16px;
-	}
-	section.projects li.project {
-		width: 300px;
 	}
 }
