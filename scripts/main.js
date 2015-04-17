@@ -121,6 +121,7 @@ function addProjects(projects, callback) {
 	callback();
 
 	function addProject(project) {
+		if (project.hide) return;
 		var $project = document.createElement('li');
 		$project.className = 'project';
 
@@ -163,9 +164,12 @@ function addProjects(projects, callback) {
 		$descContainer.className = 'project-desc';
 		$desc.innerHTML = project.desc;
 		var extra = '';
+		if (project.team) {
+			extra += ' Team of ' + project.team + '.';
+		}
 		if (project.tools && project.tools.length > 0) {
 			var listed = false;
-			extra += ' Made with <strong>';
+			extra += ' <strong>';
 			project.tools.forEach(function (tool) {
 				if (listed) extra += ', ';
 				extra += tool;
