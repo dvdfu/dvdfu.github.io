@@ -43,7 +43,7 @@
 			"source": "https://github.com/AndyF/filespace",
 			"date"  : "Mar 2015",
 			"img"   : "filespace.png",
-			"desc"  : "Webapp that aggregates online file storages like Dropbox and Drive into one interface. Built at Hack Western 2015.",
+			"desc"  : "Webapp that aggregates online file storages like Dropbox and Drive. Built at Hack Western 2015.",
 			"team"  : "4",
 			"tools" : [ "Node.js, jQuery, Dropbox API, Google Drive API" ],
 			"type"  : "code"

@@ -19,6 +19,7 @@ $(document).ready(function () {
 	analytics();
 	cycleTitle();
 	$overlay.onclick = hideImage;
+	$overlay.style.visibility = 'hidden';
 
 	for (var i = 0, len = $filterList.children.length; i < len; i++) {
 		enableFilter(i);
@@ -46,7 +47,10 @@ $(document).ready(function () {
 	});
 
 	function hideImage() {
-		$overlay.className = 'hidden';
+		$overlay.classList.add('hidden');
+		setTimeout(function () {
+			$overlay.style.visibility = 'hidden';
+		}, 300);
 	}
 });
 
@@ -71,10 +75,10 @@ function scrolling() {
 
 	$('[data-scroll-nav]').click(function () {
 		var index = $(this).attr('data-scroll-nav');
-		// window.scrollTo(0, getTop(index));
-		$('html, body').animate({
-			scrollTop: getTop(index),
-		}, 250);
+		window.scrollTo(0, getTop(index));
+		// $('html, body').animate({
+		// 	scrollTop: getTop(index),
+		// }, 500);
 	});
 
 	function scroll() {
@@ -211,7 +215,8 @@ function addProjects(projects, callback) {
 			$desc.innerHTML = description;
 			$overlayContainer.appendChild($desc);
 		}
-		$overlay.className = 'visible';
+		$overlay.classList.remove('hidden');
+		$overlay.style.visibility = 'visible';
 	}
 }
 
