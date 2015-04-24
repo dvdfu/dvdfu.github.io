@@ -12,6 +12,8 @@
 * {
 	position: relative;
 	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 }
 body {
 	margin: 0;
@@ -234,8 +236,70 @@ section.projects {
 section.projects .container {
 	margin: 40px 0;
 }
+section.projects .container > h2 {
+	text-align: center;
+	color: #fafff3;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
 section.projects .container h1 {
 	margin-bottom: 40px;
+}
+section.projects .container .filters {
+	margin: 0 auto 30px auto;
+	width: 300px;
+}
+section.projects .container .filters:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+section.projects .container .filter {
+	display: inline-block;
+	float: left;
+	color: #304848;
+	padding: 10px;
+	text-align: center;
+	width: 100px;
+	height: 80px;
+}
+section.projects .container .filter#filter-art {
+	background-color: #daf3ff;
+}
+section.projects .container .filter#filter-code {
+	background-color: #fafff3;
+}
+section.projects .container .filter#filter-game {
+	background-color: #e3ffda;
+}
+section.projects .container .filter.active {
+	color: #fafff3;
+	background-color: #304848 !important;
+	border: 1px solid #fafff3;
+	border-right: none;
+}
+section.projects .container .filter:first-child {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+section.projects .container .filter:last-child {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-right: 1px solid #fafff3;
+}
+section.projects .container .filter p {
+	font-size: 22px;
+	font-weight: bold;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+section.projects .container .filter .fa {
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
 }
 section.projects .container #project-list {
 	margin: 0 auto;
@@ -254,6 +318,9 @@ section.projects .project {
 	padding: 0;
 	margin: 10px;
 	border-radius: 5px;
+}
+section.projects .project.hide {
+	display: none;
 }
 section.projects .project.type-code {
 	background-color: #fafff3;

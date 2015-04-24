@@ -25,7 +25,7 @@
 			"source": "https://github.com/dvdfu/ludum-dare-32",
 			"date"  : "Apr 2015",
 			"img"   : "sun-slayer.gif",
-			"desc"  : "A short 48 hour game for Ludum Dare 32, themed around un-conventional weapons. Play as a fire hydrant and extinguish the sun.",
+			"desc"  : "A short game made in 48 hours for Ludum Dare 32, themed around un-conventional weapons. Play as a fire hydrant and extinguish the sun.",
 			"tools" : [ "Love2D, Lua" ],
 			"type"  : "game"
 		}, {
@@ -102,7 +102,7 @@
 			"name"  : "Avatar Korra",
 			"date"  : "Dec 2014",
 			"img"   : "korra.png",
-			"desc"  : "Figure drawing practice with Korra. Drawn in celebration of the end of The Legend of Korra.",
+			"desc"  : "Figure drawing sketch practice of Avatar Korra. Drawn in celebration of the series finale of The Legend of Korra.",
 			"type"  : "art"
 		}, {
 			"name"  : "Smash Tracker",
