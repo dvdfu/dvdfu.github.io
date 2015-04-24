@@ -1,8 +1,5 @@
 // elements
 var $filterList = document.getElementById('filter-list')
-	$filterArt = document.getElementById('filter-art'),
-	$filterCode = document.getElementById('filter-code'),
-	$filterGame = document.getElementById('filter-game'),
 	$projectError = document.getElementById('project-error'),
 	$projectList = document.getElementById('project-list'),
 	$factError = document.getElementById('fact-error'),
@@ -140,7 +137,8 @@ function addProjects(projects, callback) {
 	function addProject(project) {
 		if (project.hide) return;
 		var $project = document.createElement('li');
-		$project.className = 'project type-'+project.type;
+		$project.className = 'project';
+		$project.setAttribute('data-project-type', project.type);
 
 		// title (+link)
 		var $titleContainer = document.createElement('div'),
@@ -231,11 +229,7 @@ function filterProjects() {
 
 		if (filter === 'all') {
 			$project.classList.remove('hide');
-		} else if (filter === 'art' && $project.classList.contains('type-art')) {
-			$project.classList.remove('hide');
-		} else if (filter === 'code' && $project.classList.contains('type-code')) {
-			$project.classList.remove('hide');
-		} else if (filter === 'game' && $project.classList.contains('type-game')) {
+		} else if (filter === $project.getAttribute('data-project-type')) {
 			$project.classList.remove('hide');
 		} else {
 			$project.classList.add('hide');

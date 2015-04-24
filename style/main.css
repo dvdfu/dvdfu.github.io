@@ -260,16 +260,16 @@ section.projects .container .filter {
 	border: 1px solid #fafff3;
 	border-right: none;
 }
-section.projects .container .filter.active#filter-all {
+section.projects .container .filter.active[data-filter='all'] {
 	background-color: #fff;
 }
-section.projects .container .filter.active#filter-art {
+section.projects .container .filter.active[data-filter='art'] {
 	background-color: #daf3ff;
 }
-section.projects .container .filter.active#filter-code {
+section.projects .container .filter.active[data-filter='code'] {
 	background-color: #fafff3;
 }
-section.projects .container .filter.active#filter-game {
+section.projects .container .filter.active[data-filter='game'] {
 	background-color: #e3ffda;
 }
 section.projects .container .filter.active {
@@ -320,13 +320,13 @@ section.projects .project {
 section.projects .project.hide {
 	display: none;
 }
-section.projects .project.type-code {
+section.projects .project[data-project-type='code'] {
 	background-color: #fafff3;
 }
-section.projects .project.type-game {
+section.projects .project[data-project-type='game'] {
 	background-color: #e3ffda;
 }
-section.projects .project.type-art {
+section.projects .project[data-project-type='art'] {
 	background-color: #daf3ff;
 }
 section.projects .project .project-title {
