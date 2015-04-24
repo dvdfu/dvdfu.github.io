@@ -250,9 +250,14 @@ section.projects .project {
 	overflow: hidden;
 	width: 300px;
 	padding: 0;
-	background-color: #fafff3;
 	margin: 10px;
 	border-radius: 5px;
+}
+section.projects .project.type-code {
+	background-color: #fafff3;
+}
+section.projects .project.type-game {
+	background-color: #eaffca;
 }
 section.projects .project .project-title {
 	padding: 0 20px;

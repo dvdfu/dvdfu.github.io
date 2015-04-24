@@ -26,7 +26,8 @@
 			"date"  : "Apr 2015",
 			"img"   : "sun-slayer.gif",
 			"desc"  : "A short 48 hour game for Ludum Dare 32, themed around un-conventional weapons. Play as a fire hydrant and extinguish the sun.",
-			"tools" : [ "Love2D, Lua" ]
+			"tools" : [ "Love2D, Lua" ],
+			"type"  : "game"
 		}, {
 			"name"  : "Hop Potato",
 			"source": "https://github.com/dvdfu/hop-potato",
@@ -34,7 +35,8 @@
 			"img"   : "hop-potato.gif",
 			"desc"  : "Multiplayer party game that brings 8 players together in an intense, frantic game of hot potato. Winner of Kik Hack Week 15.04.",
 			"team"  : "3",
-			"tools" : [ "Love2D, Lua" ]
+			"tools" : [ "Love2D, Lua" ],
+			"type"  : "game"
 		}, {
 			"name"  : "Filespace",
 			"url"   : "https://filespace.herokuapp.com/",
@@ -43,7 +45,8 @@
 			"img"   : "filespace.png",
 			"desc"  : "Webapp that aggregates online file storages like Dropbox and Drive into one interface. Built at Hack Western 2015.",
 			"team"  : "4",
-			"tools" : [ "Node.js, jQuery, Dropbox API, Google Drive API" ]
+			"tools" : [ "Node.js, jQuery, Dropbox API, Google Drive API" ],
+			"type"  : "code"
 		}, {
 			"name"  : "My Website",
 			"url"   : "http://dvdfu.me/",
@@ -51,7 +54,8 @@
 			"date"  : "Mar 2015",
 			"img"   : "personal-website.png",
 			"desc"  : "Designed vertically and mobile-friendly, this website shows off my abilities and interests.",
-			"tools" : [ "jQuery", "Javascript", "CSS3", "JSON" ]
+			"tools" : [ "jQuery", "Javascript", "CSS3", "JSON" ],
+			"type"  : "code"
 		}, {
 			"name"  : "The Resistance",
 			"url"   : "https://play-resistance.herokuapp.com/",
@@ -60,7 +64,8 @@
 			"img"   : "the-resistance.png",
 			"desc"  : "Top-10 EngHack W2015 project. Helper mobile party webapp for 'The Resistance', eliminating confusing boards, cards, and counters.",
 			"team"  : "2",
-			"tools" : [ "Node.js", "socket.io", "Javascript", "CSS3" ]
+			"tools" : [ "Node.js", "socket.io", "Javascript", "CSS3" ],
+			"type"  : "code"
 		}, {
 			"name"  : "Match 3",
 			"url"   : "http://match-3.herokuapp.com",
@@ -69,21 +74,24 @@
 			"img"   : "match-3.png",
 			"desc"  : "Top-3 project at the Kik hackathon. Enter a game room using Kik and compete in real-time to find matching patterns!",
 			"team"  : "4",
-			"tools" : [ "Node.js", "socket.io", "Kik API", "Javascript", "CSS3" ]
+			"tools" : [ "Node.js", "socket.io", "Kik API", "Javascript", "CSS3" ],
+			"type"  : "code"
 		}, {
 			"name"  : "Garden Guard",
 			"source": "https://github.com/dvdfu/winter-gi-jam",
 			"date"  : "Jan 2015",
 			"img"   : "garden-guardian.gif",
 			"desc"  : "2-player turn-based strategy game at the Winter 2015 GI Jam. Compete to grow, water, and cut trees on a shared land.",
-			"tools" : [ "libGDX", "Java" ]
+			"tools" : [ "libGDX", "Java" ],
+			"type"  : "game"
 		}, {
 			"name"  : "Little UFO",
 			"source": "https://github.com/dvdfu/UFO",
 			"date"  : "Jan 2015",
 			"img"   : "UFO.gif",
 			"desc"  : "Control a UFO in a randomly generated terrain and abduct various objects that respond to physics.",
-			"tools" : [ "libGDX", "Box2D", "Java" ]
+			"tools" : [ "libGDX", "Box2D", "Java" ],
+			"type"  : "game"
 		}, {
 			"name"  : "Smash Tracker",
 			"url"	: "http://smash-tracker.herokuapp.com/",
@@ -92,7 +100,8 @@
 			"img"   : "smash-tracker.png",
 			"desc"  : "Simple Rails webapp to store, search, and compare Super Smash Bros. 1-on-1 match and player records.",
 			"team"  : "3",
-			"tools" : [ "Ruby", "Rails" ]
+			"tools" : [ "Ruby", "Rails" ],
+			"type"  : "code"
 		}, {
 			"name"  : "Fiery Flight",
 			"source": "https://github.com/dvdfu/fiery-flight",
@@ -100,7 +109,8 @@
 			"img"   : "fiery-flight.gif",
 			"desc"  : "2-player co-op game, winner of the Fall 2014 GI Jam Player's Choice Award. Work together with mouse and keyboard to chase your fiery nemesis!",
 			"team"  : "3",
-			"tools" : [ "libGDX", "Java" ]
+			"tools" : [ "libGDX", "Java" ],
+			"type"  : "game"
 		}, {
 			"name"  : "Wordasm",
 			"url"	: "http://wordasm.herokuapp.com/",
@@ -109,29 +119,24 @@
 			"img"   : "wordasm.png",
 			"desc"  : "A chatroom/word game hybrid at Hack the North 2014 where players compete in real-time to find words quickly.",
 			"team"  : "4",
-			"tools" : [ "Node.js", "socket.io", "Javascript", "Facebook API", "Bootstrap" ]
+			"tools" : [ "Node.js", "socket.io", "Javascript", "Facebook API", "Bootstrap" ],
+			"type"  : "code"
 		}, {
 			"name"  : "Scorched",
 			"source": "https://github.com/dvdfu/panic",
 			"date"  : "Aug 2014",
 			"img"   : "panic.gif",
 			"desc"  : "A fast-paced arcade game where the player tries to survive waves of molten monsters!",
-			"tools" : [ "libGDX", "Java", "GLSL" ]
+			"tools" : [ "libGDX", "Java", "GLSL" ],
+			"type"  : "game"
 		}, {
 			"name"  : "Mineral Miner",
 			"source": "https://github.com/dvdfu/gem-puzzle",
 			"date"  : "June 2014",
 			"img"   : "gem.gif",
 			"desc"  : "A puzzle game that challenges players to navigate, match, and collect gems on a grid.",
-			"tools" : [ "libGDX", "Java" ]
-		}
-	],
-	"contacts" : [
-		{
-			"title": "Github",
-			"fa"   : "github",
-			"url"  : "https://github.com/dvdfu",
-			"name" : "dvdfu"
+			"tools" : [ "libGDX", "Java" ],
+			"type"  : "game"
 		}
 	]
 }

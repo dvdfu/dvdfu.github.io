@@ -95,7 +95,6 @@ function addFacts(facts, callback) {
 	callback()
 
 	function addFact(fact) {
-		console.log(fact.name);
 		var $fact = document.createElement('li'),
 			$circle = document.createElement('div'),
 			$title = document.createElement('h2'),
@@ -123,7 +122,7 @@ function addProjects(projects, callback) {
 	function addProject(project) {
 		if (project.hide) return;
 		var $project = document.createElement('li');
-		$project.className = 'project';
+		$project.className = 'project type-'+project.type;
 
 		// title (+link)
 		var $titleContainer = document.createElement('div'),
