@@ -146,14 +146,14 @@ function addProjects(projects, callback) {
 			var $imageContainer = document.createElement('div'),
 				$image = document.createElement('img');
 			$imageContainer.className = 'project-image';
-			$image.src = '/images/projects/'+project.img;
+			$image.src = '/images/'+project.type+'/'+project.img;
 			$imageContainer.appendChild($image);
 			$project.appendChild($imageContainer);
 
 			// image modal on click
 			var self = $imageContainer;
 			$imageContainer.onclick = function() {
-				viewImage('/images/projects/'+project.img, project.desc);
+				viewImage($image.src, project.desc);
 			};
 		}
 
