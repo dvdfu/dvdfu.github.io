@@ -32,7 +32,7 @@
 			"source": "https://github.com/dvdfu/hop-potato",
 			"date"  : "Apr 2015",
 			"img"   : "hop-potato.gif",
-			"desc"  : "Multiplayer party game that brings 8 players together in an intense, manic game of hot potato. Winner of Kik Hack Week 15.04.",
+			"desc"  : "Multiplayer party game that brings 8 players together in an intense, frantic game of hot potato. Winner of Kik Hack Week 15.04.",
 			"team"  : "3",
 			"tools" : [ "Love2D, Lua" ]
 		}, {
