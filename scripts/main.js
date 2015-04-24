@@ -15,11 +15,7 @@ var $filterList = document.getElementById('filter-list')
 // globals
 var projectWidth = 320,
 	factWidth = 220,
-	filter = {
-		art: 1,
-		code: 1,
-		game: 1
-	};
+	filter = 'all'
 
 // on ready
 $(document).ready(function () {
@@ -34,18 +30,8 @@ $(document).ready(function () {
 	function enableFilter(i) {
 		var $filter = $filterList.children[i];
 		$filter.onclick = function() {
-			if ($filter.classList.contains('active')) {
-				$filter.classList.remove('active');
-			} else {
-				$filter.classList.add('active');
-			}
-
-			filter = {
-				art: $filterArt.classList.contains('active')?0:1,
-				code: $filterCode.classList.contains('active')?0:1,
-				game: $filterGame.classList.contains('active')?0:1,
-			};
-
+			if ($filter.getAttribute('data-filter') === filter) return;
+			filter = $filter.getAttribute('data-filter');
 			filterProjects();
 		}
 	}
@@ -232,14 +218,24 @@ function addProjects(projects, callback) {
 }
 
 function filterProjects() {
+	for (var i = 0, len = $filterList.children.length; i < len; i++) {
+		var $filter = $filterList.children[i];
+		$filter.classList.remove('active');
+		if ($filter.getAttribute('data-filter') === filter) {
+			$filter.classList.add('active');
+		}
+	}
+
 	for (var i = 0, len = $projectList.children.length; i < len; i++) {
 		var $project = $projectList.children[i];
-		console.log($project);
-		if (filter.art > 0 && $project.classList.contains('type-art')) {
+
+		if (filter === 'all') {
 			$project.classList.remove('hide');
-		} else if (filter.code > 0 && $project.classList.contains('type-code')) {
+		} else if (filter === 'art' && $project.classList.contains('type-art')) {
 			$project.classList.remove('hide');
-		} else if (filter.game > 0 && $project.classList.contains('type-game')) {
+		} else if (filter === 'code' && $project.classList.contains('type-code')) {
+			$project.classList.remove('hide');
+		} else if (filter === 'game' && $project.classList.contains('type-game')) {
 			$project.classList.remove('hide');
 		} else {
 			$project.classList.add('hide');

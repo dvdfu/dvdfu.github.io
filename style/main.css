@@ -236,12 +236,6 @@ section.projects {
 section.projects .container {
 	margin: 40px 0;
 }
-section.projects .container > h2 {
-	text-align: center;
-	color: #fafff3;
-	font-size: 20px;
-	margin-bottom: 10px;
-}
 section.projects .container h1 {
 	margin-bottom: 40px;
 }
@@ -257,26 +251,30 @@ section.projects .container .filters:after {
 section.projects .container .filter {
 	display: inline-block;
 	float: left;
-	color: #304848;
+	color: #fafff3;
+	background-color: #304848;
 	padding: 10px;
 	text-align: center;
-	width: 100px;
-	height: 80px;
+	width: 75px;
+	height: 60px;
+	border: 1px solid #fafff3;
+	border-right: none;
 }
-section.projects .container .filter#filter-art {
+section.projects .container .filter.active#filter-all {
+	background-color: #fff;
+}
+section.projects .container .filter.active#filter-art {
 	background-color: #daf3ff;
 }
-section.projects .container .filter#filter-code {
+section.projects .container .filter.active#filter-code {
 	background-color: #fafff3;
 }
-section.projects .container .filter#filter-game {
+section.projects .container .filter.active#filter-game {
 	background-color: #e3ffda;
 }
 section.projects .container .filter.active {
-	color: #fafff3;
-	background-color: #304848 !important;
-	border: 1px solid #fafff3;
-	border-right: none;
+	color: #304848;
+	border: none;
 }
 section.projects .container .filter:first-child {
 	border-top-left-radius: 5px;
