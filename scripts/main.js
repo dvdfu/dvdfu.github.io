@@ -12,7 +12,7 @@ var $filterList = document.getElementById('filter-list')
 // globals
 var projectWidth = 320,
 	factWidth = 220,
-	filter = 'all'
+	filter = 'all';
 
 // on ready
 $(document).ready(function () {
@@ -55,8 +55,10 @@ $(document).ready(function () {
 });
 
 function fitItems() {
-	$projectList.style.width = Math.floor($(window).width() / projectWidth) * projectWidth + 'px';
-	for (var i = factWidth, maxWidth = $(window).width(); i < maxWidth && i <= factWidth * 4; i *= 2) {
+	var windowWidth = $(window).width(),
+		maxProjectWidth = Math.max(windowWidth - 100, 320);
+	$projectList.style.width = Math.floor(maxProjectWidth / projectWidth) * projectWidth + 'px';
+	for (var i = factWidth; i < windowWidth && i <= factWidth * 4; i *= 2) {
 		$factList.style.width = i + 'px';
 	}
 }
@@ -80,6 +82,16 @@ function scrolling() {
 		// 	scrollTop: getTop(index),
 		// }, 500);
 	});
+
+	var filterParam = document.location.search;
+	if (filterParam) {
+		filterParam = filterParam.substring(1);
+		if (['art', 'code', 'game', 'all'].indexOf(filterParam) >= 0) {
+			document.getElementById('project-button').click();
+			filter = filterParam;
+			filterProjects();
+		}
+	}
 
 	function scroll() {
 		var windowY = window.pageYOffset,
