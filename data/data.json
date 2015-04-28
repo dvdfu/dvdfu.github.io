@@ -20,6 +20,12 @@
 	],
 	"projects" : [
 		{
+			"name"  : "Steven Universe",
+			"date"  : "May 2015",
+			"img"   : "steven-universe.png",
+			"desc"  : "A detailed illustration of Steven Universe and the Crystal Gems, the main characters of the titular series.",
+			"type"  : "art"
+		}, {
 			"name"  : "Sun Slayer",
 			"url"	: "http://dvdfu.itch.io/sun-slayer",
 			"source": "https://github.com/dvdfu/ludum-dare-32",
