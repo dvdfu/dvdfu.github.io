@@ -3,7 +3,7 @@
 		{
 			"name"  : "Study",
 			"icon"  : "fa-book",
-			"desc"  : "Currently a 19-year old 2B Software Engineer at the University of Waterloo. I've been having a blast so far!"
+			"desc"  : "A 19-year old 2B Software Engineer studying at the University of Waterloo."
 		}, {
 			"name"  : "Code",
 			"icon"  : "fa-code",
@@ -45,8 +45,8 @@
 			"type"  : "game"
 		}, {
 			"name"  : "Filespace",
-			"url"   : "https://filespace.herokuapp.com/",
-			"source": "https://github.com/AndyF/filespace",
+			"url"   : "https://infinitefilespace.herokuapp.com/",
+			"source": "https://github.com/BlakeBrown/infinitefilespace",
 			"date"  : "Mar 2015",
 			"img"   : "filespace.png",
 			"desc"  : "Webapp that aggregates online file storages like Dropbox and Drive. Built at Hack Western 2015.",
