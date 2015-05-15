@@ -192,6 +192,19 @@ section.about {
 section.about .container {
 	margin: 40px 0;
 }
+section.about .resume {
+	text-align: center;
+	padding: 0 60px;
+	height: 80px;
+}
+section.about .resume h2 {
+	line-height: 80px;
+	margin-bottom: 0;
+	font-size: 22px;
+}
+section.about .resume h2 a {
+	color: #226f44;
+}
 section.about #fact-list {
 	margin: 0 auto;
 	width: 220px;
