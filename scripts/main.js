@@ -78,9 +78,9 @@ function scrolling() {
 	$('[data-scroll-nav]').click(function () {
 		var index = $(this).attr('data-scroll-nav');
 		window.scrollTo(0, getTop(index));
-		// $('html, body').animate({
+		// $('body').animate({
 		// 	scrollTop: getTop(index),
-		// }, 500);
+		// }, 200);
 	});
 
 	var filterParam = document.location.search;
