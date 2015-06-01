@@ -77,10 +77,10 @@ function scrolling() {
 
 	$('[data-scroll-nav]').click(function () {
 		var index = $(this).attr('data-scroll-nav');
-		window.scrollTo(0, getTop(index));
-		// $('body').animate({
-		// 	scrollTop: getTop(index),
-		// }, 200);
+		// window.scrollTo(0, getTop(index));
+		$('body').animate({
+			scrollTop: getTop(index),
+		}, 500);
 	});
 
 	var filterParam = document.location.search;

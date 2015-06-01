@@ -20,15 +20,24 @@
 	],
 	"projects" : [
 		{
-			"name"  : "Steven Universe",
+			"name"  : "Sushi Ninja",
+			"source": "https://github.com/dvdfu/sushi-ninja",
+			"date"  : "May 2015",
+			"img"   : "sushi.gif",
+			"desc"  : "Multiplayer sushi-grabbing, ninja-dashing game made for GI Jam of Spring 2015. Won prize for most polished and completed!",
+			"team"	: "3",
+			"tools" : [ "Love2D, Lua" ],
+			"type"  : "game"
+		}, {
+			"name"  : "Crystal Temple",
 			"date"  : "May 2015",
 			"img"   : "steven-universe.png",
-			"desc"  : "A detailed illustration of Steven Universe and the Crystal Gems, the main characters of the titular series.",
+			"desc"  : "A detailed illustration of Steven Universe and the Crystal Gems, the main characters of Steven Universe.",
 			"type"  : "art"
 		}, {
 			"name"  : "Sun Slayer",
 			"url"	: "http://dvdfu.itch.io/sun-slayer",
-			"source": "https://github.com/dvdfu/ludum-dare-32",
+			"source": "https://github.com/dvdfu/sun-slayer",
 			"date"  : "Apr 2015",
 			"img"   : "sun-slayer.gif",
 			"desc"  : "A short game made in 48 hours for Ludum Dare 32, themed around un-conventional weapons. Play as a fire hydrant and extinguish the sun.",
@@ -105,7 +114,7 @@
 			"tools" : [ "libGDX", "Box2D", "Java" ],
 			"type"  : "game"
 		}, {
-			"name"  : "Avatar Korra",
+			"name"  : "The Avatar",
 			"date"  : "Dec 2014",
 			"img"   : "korra.png",
 			"desc"  : "Figure drawing sketch practice of Avatar Korra. Drawn in celebration of the series finale of The Legend of Korra.",
