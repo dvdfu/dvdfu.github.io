@@ -20,8 +20,8 @@ body {
 	padding: 0;
 	background-color: #222223;
 }
-::-webkit-scrollbar { 
-    display: none; 
+::-webkit-scrollbar {
+    display: none;
 }
 .page {
 	width: 100%;

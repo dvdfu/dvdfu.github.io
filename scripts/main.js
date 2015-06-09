@@ -196,7 +196,7 @@ function addProjects(projects, callback) {
 		$desc.innerHTML = project.desc;
 		var extra = '';
 		if (project.team) {
-			extra += ' Team of ' + project.team + '.';
+			// extra += ' Team of ' + project.team + '.';
 		}
 		if (project.tools && project.tools.length > 0) {
 			var listed = false;
