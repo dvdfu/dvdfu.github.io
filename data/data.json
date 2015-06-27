@@ -24,7 +24,7 @@
 			"source": "https://github.com/andyzg/keytar",
 			"date"  : "June 2015",
 			"img"   : "keytar.png",
-			"desc"  : "A Chrome extension lets users type on a modified keyboard using a microhpone and the sound of a guitar.",
+			"desc"  : "A Chrome extension where users type on a modified keyboard using a microphone and guitar. 2nd place winner at EngHack Spring 2015.",
 			"team"	: "2",
 			"tools" : [ "Chrome, JavaScript, CSS, HTML5" ],
 			"type"  : "code"
@@ -92,7 +92,7 @@
 			"source": "https://github.com/dvdfu/resistance-web",
 			"date"  : "Mar 2015",
 			"img"   : "the-resistance.png",
-			"desc"  : "Top-10 EngHack W2015 project. Helper mobile party webapp for 'The Resistance', eliminating confusing boards, cards, and counters.",
+			"desc"  : "Top-10 EngHack Winter 2015 project. Helper webapp for 'The Resistance', eliminating physical boards, cards, and counters.",
 			"team"  : "2",
 			"tools" : [ "Node.js", "socket.io", "Javascript", "CSS3" ],
 			"type"  : "code"
