@@ -24,7 +24,7 @@
 			"source": "https://github.com/andyzg/keytar",
 			"date"  : "June 2015",
 			"img"   : "keytar.png",
-			"desc"  : "A Chrome extension that uses a modified keyboard and microphone to type words using the sound of a guitar.",
+			"desc"  : "A Chrome extension lets users type on a modified keyboard using a microhpone and the sound of a guitar.",
 			"team"	: "2",
 			"tools" : [ "Chrome, JavaScript, CSS, HTML5" ],
 			"type"  : "code"

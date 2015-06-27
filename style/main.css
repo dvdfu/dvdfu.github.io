@@ -72,6 +72,7 @@ ul {
 	background-color: rgba(0,0,0,0.95);
 	opacity: 1;
 	transition: opacity 0.3s;
+	cursor: pointer;
 }
 #overlay.hidden {
 	opacity: 0;
@@ -371,6 +372,7 @@ section.projects .project .project-image {
 	overflow: hidden;
 	width: 100%;
 	height: 240px;
+	cursor: pointer;
 }
 section.projects .project .project-image img {
 	width: 150%;
