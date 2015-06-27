@@ -20,6 +20,15 @@
 	],
 	"projects" : [
 		{
+			"name"  : "Keytar",
+			"source": "https://github.com/andyzg/keytar",
+			"date"  : "June 2015",
+			"img"   : "keytar.png",
+			"desc"  : "A Chrome extension that uses a modified keyboard and microphone to type words using the sound of a guitar.",
+			"team"	: "2",
+			"tools" : [ "Chrome, JavaScript, CSS, HTML5" ],
+			"type"  : "code"
+		}, {
 			"name"  : "Sushi Ninja",
 			"source": "https://github.com/dvdfu/sushi-ninja",
 			"date"  : "May 2015",
