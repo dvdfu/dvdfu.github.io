@@ -120,6 +120,7 @@ nav .nav-item {
 	width: 50px;
 	height: 50px;
 	text-align: center;
+	cursor: pointer;
 }
 nav .nav-item:active {
 	background-color: #000;
@@ -271,6 +272,7 @@ section.projects .container .filter {
 	text-align: center;
 	width: 75px;
 	height: 60px;
+	cursor: pointer;
 }
 section.projects .container .filter.active[data-filter='all'] {
 	background-color: #fff;
