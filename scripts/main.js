@@ -58,7 +58,7 @@ function fitItems() {
 	var windowWidth = $(window).width(),
 		maxProjectWidth = Math.max(windowWidth - 100, 320);
 	$projectList.style.width = Math.floor(maxProjectWidth / projectWidth) * projectWidth + 'px';
-	for (var i = factWidth; i < windowWidth && i <= factWidth * 4; i *= 2) {
+	for (var i = factWidth; i < windowWidth && i <= factWidth * 5; i += factWidth) {
 		$factList.style.width = i + 'px';
 	}
 }
@@ -264,7 +264,7 @@ function cycleTitle() {
 			'an artist.',
 			'a creator.',
 			'a designer.',
-			'a smasher.',
+			'a Smash Brother.',
 			'a blogger.',
 		];
 	cycle(0);

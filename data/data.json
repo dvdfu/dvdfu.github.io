@@ -3,29 +3,58 @@
 		{
 			"name"  : "Study",
 			"icon"  : "fa-book",
-			"desc"  : "A 19-year old 2B Software Engineer studying at the University of Waterloo."
+			"desc"  : "A 20-year old 3A Software Engineer studying at the University of Waterloo."
 		}, {
 			"name"  : "Code",
 			"icon"  : "fa-code",
-			"desc"  : "Aspiring JavaScript and Node.js web developer. I also use Java. Then there's Python, C++, C, Lua, Ruby/Rails..."
+			"desc"  : "I love building clean and structured websites and games. I use JavaScript, C#, Java, C++, C, Ruby."
 		}, {
-			"name"  : "Game",
+			"name"  : "Game Dev",
 			"icon"  : "fa-gamepad",
-			"desc"  : "Ultra-passionate indie game developer. I've used libGDX, Love2D, Unity, and am learning everyday."
+			"desc"  : "Ultra-passionate indie game developer. I've used Unity, Love2D, libGDX and am learning everyday."
+		}, {
+			"name"  : "Music",
+			"icon"  : "fa-music",
+			"desc"  : "I'm a perfect-pitch pianist/guitarist with years of practice and compose music, as well."
 		}, {
 			"name"  : "Art",
 			"icon"  : "fa-paint-brush",
-			"desc"  : "I love to draw digitally in my spare time! I've made artwork of all kinds and sold some at conventions."
+			"desc"  : "I love to draw digitally in my spare time. I've made artwork of all kinds and sold some at conventions."
 		}
 	],
 	"projects" : [
 		{
+			"name"  : "Acrodog",
+			"url"	: "http://dvdfu.itch.io/acrodog",
+			"source": "https://github.com/dvdfu/ld34",
+			"date"  : "Dec 2015",
+			"img"   : "acrodog.gif",
+			"desc"  : "2-day project for Ludum Dare 34. Help your stunt dog stay in the spotlight in this charming 2-button action game.",
+			"tools" : [ "Lua", "Love2D", "Box2D" ],
+			"type"  : "game"
+		}, {
+			"name"  : "Scorched",
+			"source": "https://github.com/dvdfu/panic",
+			"date"  : "Oct 2015",
+			"img"   : "scorched.gif",
+			"desc"  : "A fast-paced arcade game where the player tries to survive waves of molten monsters! In development.",
+			"tools" : [ "Lua", "Love2D", "libGDX", "Java", "GLSL" ],
+			"type"  : "game"
+		}, {
+			"name"  : "Translate",
+			"source": "https://github.com/angelgao/CardboardTranslate",
+			"date"  : "Sept 2015",
+			"img"   : "cardboard-translate.png",
+			"desc"  : "A Google Cardboard project for Hack the North 2015 that translates written foreign text in real-time.",
+			"tools" : [ "Java", "Android", "Google Translate API", "Tesseract", "Google Cardboard" ],
+			"type"  : "code"
+		}, {
 			"name"  : "Space Golf",
 			"source": "https://github.com/dvdfu/space-golf",
 			"date"  : "Sept 2015",
 			"img"   : "space-golf.gif",
-			"desc"  : "4-day Unity project developed as an independent project at Uken Games. Brings golf to a solar system with tricky orbitals.",
-			"tools" : [ "C#, Unity" ],
+			"desc"  : "Unity game developed in 4 days as a bootcamp project at Uken Games. Brings golf to a solar system with tricky orbitals.",
+			"tools" : [ "C#", "Unity" ],
 			"type"  : "game"
 		}, {
 			"name"  : "Keytar",
@@ -34,7 +63,7 @@
 			"img"   : "keytar.png",
 			"desc"  : "A Chrome extension where users type on a modified keyboard using a microphone and guitar. 2nd place winner at EngHack Spring 2015.",
 			"team"	: "2",
-			"tools" : [ "Chrome, JavaScript, CSS, HTML5" ],
+			"tools" : [ "Chrome", "JavaScript", "CSS", "HTML5" ],
 			"type"  : "code"
 		}, {
 			"name"  : "Sushi Ninja",
@@ -43,22 +72,23 @@
 			"img"   : "sushi.gif",
 			"desc"  : "Multiplayer sushi-grabbing, ninja-dashing game made for GI Jam of Spring 2015. Won prize for most polished and completed!",
 			"team"	: "3",
-			"tools" : [ "Love2D, Lua" ],
+			"tools" : [ "Love2D", "Lua" ],
 			"type"  : "game"
 		}, {
 			"name"  : "Crystal Temple",
 			"date"  : "May 2015",
 			"img"   : "steven-universe.png",
 			"desc"  : "A detailed illustration of Steven Universe and the Crystal Gems, the main characters of Steven Universe.",
-			"type"  : "art"
+			"type"  : "art",
+			"hide"	: true
 		}, {
 			"name"  : "Sun Slayer",
 			"url"	: "http://dvdfu.itch.io/sun-slayer",
 			"source": "https://github.com/dvdfu/sun-slayer",
 			"date"  : "Apr 2015",
 			"img"   : "sun-slayer.gif",
-			"desc"  : "A short game made in 48 hours for Ludum Dare 32, themed around un-conventional weapons. Play as a fire hydrant and extinguish the sun.",
-			"tools" : [ "Love2D, Lua" ],
+			"desc"  : "2-day project for Ludum Dare 32, themed around unconventional weapons. Play as a fire hydrant and extinguish the sun.",
+			"tools" : [ "Love2D", "Lua" ],
 			"type"  : "game"
 		}, {
 			"name"  : "Hop Potato",
@@ -67,7 +97,7 @@
 			"img"   : "hop-potato.gif",
 			"desc"  : "Multiplayer party game that brings 8 players together in an intense, frantic game of hot potato. Winner of Kik Hack Week 15.04.",
 			"team"  : "3",
-			"tools" : [ "Love2D, Lua" ],
+			"tools" : [ "Love2D", "Lua" ],
 			"type"  : "game"
 		}, {
 			"name"  : "Filespace",
@@ -77,7 +107,7 @@
 			"img"   : "filespace.png",
 			"desc"  : "Webapp that aggregates online file storages like Dropbox and Drive. Built at Hack Western 2015.",
 			"team"  : "4",
-			"tools" : [ "Node.js, jQuery, Dropbox API, Google Drive API" ],
+			"tools" : [ "Node.js", "jQuery", "Dropbox API", "Google Drive API" ],
 			"type"  : "code"
 		}, {
 			"name"  : "My Website",
@@ -135,7 +165,8 @@
 			"date"  : "Dec 2014",
 			"img"   : "korra.png",
 			"desc"  : "Figure drawing sketch practice of Avatar Korra. Drawn in celebration of the series finale of The Legend of Korra.",
-			"type"  : "art"
+			"type"  : "art",
+			"hide"	: true
 		}, {
 			"name"  : "Smash Tracker",
 			"url"	: "http://smash-tracker.herokuapp.com/",
@@ -172,14 +203,6 @@
 			"tools" : [ "Node.js", "socket.io", "Javascript", "Facebook API", "Bootstrap" ],
 			"type"  : "code"
 		}, {
-			"name"  : "Scorched",
-			"source": "https://github.com/dvdfu/panic",
-			"date"  : "Aug 2014",
-			"img"   : "panic.gif",
-			"desc"  : "A fast-paced arcade game where the player tries to survive waves of molten monsters!",
-			"tools" : [ "libGDX", "Java", "GLSL" ],
-			"type"  : "game"
-		}, {
 			"name"  : "Mineral Miner",
 			"source": "https://github.com/dvdfu/gem-puzzle",
 			"date"  : "June 2014",
@@ -188,7 +211,7 @@
 			"tools" : [ "libGDX", "Java" ],
 			"type"  : "game"
 		}, {
-			"name"  : "Chill Jam",
+			"name"  : "Adventure Time",
 			"date"  : "May 2014",
 			"img"   : "adventure-time.png",
 			"desc"  : "A detailed rendering of main Adventure Time cast members playing music together.",
