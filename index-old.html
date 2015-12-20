@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>David Fu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="keywords" content="david, fu, dvdfu, software, engineer, waterloo, web, design, game, indie, developer">
+	<meta name="description" content="David Fu.">
+
+	<link rel="icon" type="image/png" href="/images/favicon.png">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Montserrat|Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/style/main.css">
+</head>
+<body class="page">
+	<nav>
+		<div class="nav-container">
+			<div class="nav-item title" data-scroll-nav="0"><i class="fa fa-2x fa-home"></i>
+			</div><div class="nav-item about" data-scroll-nav="1"><i class="fa fa-2x fa-info"></i>
+			</div><div class="nav-item projects" data-scroll-nav="2" id="project-button"><i class="fa fa-2x fa-star"></i>
+			</div>
+		</div>
+	</nav>
+	<div id="overlay" class="hidden">
+		<div id="overlay-container"></div>
+	</div>
+	<section class="sec title" data-scroll-index="0">
+		<div class="circle" id="circle">
+			<div class="inner">
+				<h1>David Fu</h1>
+				<h2>
+					<span id="cycle-prefix"></span>
+					<span id="cycle-text"></span>
+				</h2>
+			</div>
+		</div>
+	</section>
+
+	<section class="sec about" data-scroll-index="1">
+		<div class="container">
+			<ul id="fact-list">
+				<li class="fact" id="fact-error">
+					<p>Things were supposed to show up here, but something went wrong! It's probably a network problem.</p>
+				</li>
+			</ul>
+			<div class="resume">
+				<h2>
+					Here's my <a href="/data/resume.pdf" target="_blank">résumé</a>.
+				</h2>
+			</div>
+		</div>
+	</section>
+
+	<section class="sec projects" data-scroll-index="2">
+		<div class="container">
+			<div class="filters" id="filter-list">
+				<div class="filter active" id="filter-all" data-filter="all">
+					<p>All</p>
+				</div>
+				<div class="filter" id="filter-code" data-filter="code">
+					<i class="fa fa-2x fa-code"></i>
+				</div>
+				<div class="filter" id="filter-game" data-filter="game">
+					<i class="fa fa-2x fa-gamepad"></i>
+				</div>
+				<div class="filter" id="filter-art" data-filter="art">
+					<i class="fa fa-2x fa-paint-brush"></i>
+				</div>
+			</div>
+			<ul id="project-list">
+				<li class="project" id="project-error">
+					<div class="project-desc">
+						<p>Things were supposed to show up here, but something went wrong! It's probably a network problem.</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="footer">
+		<div class="container">
+			<h2>Keep in touch!</h2>
+			<ul>
+				<a href="https://github.com/dvdfu"><i class="fa fa-2x fa-github"></i></a>
+				<a href="http://ca.linkedin.com/in/dvdfu"><i class="fa fa-2x fa-linkedin"></i></a>
+				<a href="https://twitter.com/dvdfu"><i class="fa fa-2x fa-twitter"></i></a>
+				<a href="http://dvdfu.tumblr.com"><i class="fa fa-2x fa-tumblr"></i></a>
+				<a href="mailto:davidf1212@gmail.com"><i class="fa fa-2x fa-envelope"></i></a>
+			</ul>
+			<p>Handmade by <strong>David Fu</strong> using<br>
+				<strong>
+					<a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>&nbsp;&middot;&nbsp;
+					<a href="http://www.google.com/fonts">Google Fonts</a>&nbsp;&middot;&nbsp;
+					<a href="http://jquery.com/">jQuery</a>
+				</strong>
+			</p>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="/scripts/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="/scripts/main.js"></script>
+</body>
+</html>
