@@ -1,0 +1,35 @@
+@import "reset";
+
+$light-gray: #eee;
+
+
+h1 {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 36px;
+	line-height: 100%;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	line-height: 120%;
+}
+
+@mixin bubble($color) {
+  border-radius: 5px;
+  background-color: $color;
+  padding: 10px;
+}
+
+.project {
+  @include bubble($light-gray);
+  width: 280px;
+  overflow: hidden;
+  .project-image {
+    
+  }
+}
