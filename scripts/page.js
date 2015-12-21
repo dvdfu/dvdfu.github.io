@@ -1,13 +1,33 @@
+var Container = React.createClass({
+  getInitialState: function() {
+    return {work: [], projects: []};
+  },
+  componentDidMount: function() {
+    $.getJSON('/data/data.json', function (data) {
+      this.setState(data);
+    }.bind(this));
+  },
+  render: function() {
+    return (
+      <div>
+        <NavBar/>
+        <Work jobs={this.state.jobs}/>
+        <Footer/>
+      </div>
+    );
+  }
+});
+
 var NavBar = React.createClass({
   render: function() {
     return (
-      <nav>
+      <nav className="nav-bar">
         <ul className="wrap">
-          <NavButton name="dvdfu" logo={true}/>
-          <NavButton name="Info" icon="info"/>
-          <NavButton name="Work" icon="suitcase"/>
-          <NavButton name="Projects" icon="star"/>
-          <NavButton name="Contact" icon="envelope"/>
+        <NavButton name="dvdfu" logo={true}/>
+        <NavButton name="Info" icon="info"/>
+        <NavButton name="Work" icon="suitcase"/>
+        <NavButton name="Projects" icon="star"/>
+        <NavButton name="Contact" icon="envelope"/>
         </ul>
       </nav>
     );
@@ -19,7 +39,7 @@ var NavButton = React.createClass({
     var className = this.props.logo ? 'logo' : '';
     var content = (<h5 className={className}>{this.props.name}</h5>);
     if (window.innerWidth < 420 && this.props.icon) {
-      content = (<i className={'fa fa-'+this.props.icon}></i>);
+      content = (<i className={'fa fa-' + this.props.icon}></i>);
     }
     return (<li className="nav-cell">{content}</li>);
   }
@@ -27,22 +47,14 @@ var NavButton = React.createClass({
 
 var NavIcon = React.createClass({
   render: function() {
-    var icon = 'nav-icon fa fa-2x fa-'+this.props.icon;
+    var icon = 'nav-icon fa fa-2x fa-' + this.props.icon;
     return (<i className={icon}></i>);
   }
 });
 
-ReactDOM.render(<NavBar/>, document.getElementById('nav'));
-
-var Projects = React.createClass({
+var ProjectList = React.createClass({
   getInitialState: function() {
-    return {
-      data: {
-        facts: [],
-        projects: [],
-        contacts: []
-      }
-    };
+    return {projects: []};
   },
   componentDidMount: function() {
     $.getJSON('/data/data.json', function (data) {
@@ -54,9 +66,9 @@ var Projects = React.createClass({
       return (<Project data={project} key={i}/>);
     });
     return (
-      <div className="projects">
+      <section className="projects">
         {projectList}
-      </div>
+      </section>
     );
   }
 });
@@ -106,21 +118,81 @@ var ProjectTools = React.createClass({
   }
 });
 
-// ReactDOM.render(<Projects/>, document.getElementById('content'));
-
-var ContactBox = React.createClass({
+var Work = React.createClass({
   render: function() {
     return (
-      <div className="contact-box">
-        <ContactList/>
-        <p>Site handmade by <strong>David Fu</strong> using</p>
-        <p>
-          <a href="https://facebook.github.io/react/">React</a>&nbsp;&middot;&nbsp;
-          <a href="https://nodejs.org/en/">Node.js</a>&nbsp;&middot;&nbsp;
-          <a href="https://fortawesome.github.io/Font-Awesome/">Font Awesome</a>&nbsp;&middot;&nbsp;
-          <a href="https://www.google.com/fonts">Google Fonts</a>
-        </p>
+      <section className="work">
+        <JobList jobs={this.props.jobs}/>
+      </section>
+    );
+  }
+});
+
+var JobList = React.createClass({
+  render: function() {
+    var jobs = null;
+    if (this.props.jobs) {
+      jobs = this.props.jobs.map(function(job, i) {
+        return (
+          <Job
+            company={job.company}
+            position={job.position}
+            tasks={job.tasks}
+            image={job.image}
+            startDate={job.startDate}
+            endDate={job.endDate}
+            key={i}
+          />
+        );
+      });
+    }
+    return (<ul className="job-list wrap">{jobs}</ul>);
+  }
+});
+
+var Job = React.createClass({
+  statics: {
+    months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
+  },
+  render: function() {
+    var date = Job.months[this.props.startDate.m - 1];
+    if (this.props.startDate.y != this.props.endDate.y) {
+      date += ' ' + this.props.startDate.y;
+    }
+    date += ' - ' + Job.months[this.props.endDate.m - 1] + ' ' + this.props.endDate.y;
+    var tasks = this.props.tasks.map(function(task, i) {
+      return (<li key={i}><p>{task}</p></li>);
+    });
+    return (
+      <div className="job">
+        <div className="job-header">
+          <img src={'/images/' + this.props.image}></img>
+          <div className="job-info">
+            <h3>{this.props.position}</h3>
+            <h5>{date}</h5>
+          </div>
+        </div>
+        <ul>{tasks}</ul>
       </div>
+    );
+  }
+});
+
+var Footer = React.createClass({
+  render: function() {
+    return (
+      <footer className="footer">
+        <div className="contact-box">
+          <ContactList/>
+          <p>Site handmade by <strong>David Fu</strong> using</p>
+          <p>
+            <a href="https://facebook.github.io/react/">React</a>&nbsp;&middot;&nbsp;
+            <a href="https://nodejs.org/en/">Node.js</a>&nbsp;&middot;&nbsp;
+            <a href="https://fortawesome.github.io/Font-Awesome/">Font Awesome</a>&nbsp;&middot;&nbsp;
+            <a href="https://www.google.com/fonts">Google Fonts</a>
+          </p>
+        </div>
+      </footer>
     );
   }
 });
@@ -141,7 +213,7 @@ var ContactList = React.createClass({
 
 var Contact = React.createClass({
   render: function() {
-    var className = 'fa fa-2x fa-'+this.props.icon;
+    var className = 'fa fa-2x fa-' + this.props.icon;
     return (
       <li className="contact">
         <a href={this.props.link}>
@@ -152,4 +224,4 @@ var Contact = React.createClass({
   }
 });
 
-ReactDOM.render(<ContactBox/>, document.getElementById('footer'));
+ReactDOM.render(<Container/>, document.getElementById('container'));

@@ -14,6 +14,18 @@ $break-small: 420px;
   background-color: $color;
 }
 
+@mixin v-center() {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
 body {
 	background-color: $light-gray;
 }
@@ -34,21 +46,23 @@ h3 {
 	line-height: 100%;
 }
 
-h5 {
-	color: $mid-gray;
+p, h5, li {
+	color: $dark-gray;
 	font-family: 'Muli', sans-serif;
 	font-size: 15px;
 	line-height: 120%;
 }
 
-p {
-	font-family: 'Muli', sans-serif;
-	font-size: 15px;
-	line-height: 120%;
+h5 {
+	color: $mid-gray;
 }
 
 strong {
 	font-weight: bold;
+}
+
+#container {
+	padding-top: 50px;
 }
 
 .wrap {
@@ -63,10 +77,11 @@ strong {
 	}
 }
 
-nav {
+.nav-bar {
 	z-index: 10;
 	background-color: $dark-gray;
 	position: fixed;
+	top: 0;
 	width: 100%;
 	height: 50px;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
@@ -100,7 +115,57 @@ nav {
 	}
 }
 
-#footer {
+.work {
+	position: relative;
+	width: 100%;
+}
+
+.job-list {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.job {
+	padding: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid $mid-gray;
+	&:last-child {
+		margin-bottom: 0;
+		border-bottom: none;
+	}
+	ul {
+		margin-top: 15px;
+		margin-left: 15px;
+		list-style-type: disc;
+	}
+	li {
+		color: $mid-gray;
+		p {
+			color: $dark-gray;
+		}
+	}
+}
+
+.job-header {
+	position: relative;
+	height: 70px;
+	img {
+		@include v-center();
+		width: 100px;
+	}
+	.job-info {
+		@include v-center();
+		left: 115px;
+	}
+}
+
+.projects {
+	position: relative;
+	width: 100%;
+	height: 400px;
+}
+
+.footer {
 	background-color: $dark-gray;
 	position: relative;
 	width: 100%;

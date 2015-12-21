@@ -1,4 +1,40 @@
 {
+  "jobs": [
+    {
+      "company": "Uken Games",
+      "position": "Game Software Developer",
+      "startDate": { "m": 9, "y": 2015 },
+      "endDate": { "m": 12, "y": 2015 },
+      "image": "logo-uken.png",
+      "tasks": [
+        "Used C# and UGUI extensively to build game features for a beta launch",
+        "Wrote and merged 130 Unity and Rails pull requests in 15 weeks",
+        "Used internal frameworks to record user activity for analytic purposes"
+      ],
+      "comment": "Over the course of David's work term he has been a dependable worker that has been willing to take on difficult problems. I've been impressed with his ability to learn quickly and be able to work in areas without much prior knowledge of how they work. It's been a pleasure working with David, we wish him all the best."
+    }, {
+      "company": "Kik",
+      "position": "Full Stack Web Developer",
+      "startDate": { "m": 1, "y": 2015 },
+      "endDate": { "m": 5, "y": 2015 },
+      "image": "logo-kik.png",
+      "tasks": [
+        "Implemented client SockJS push notifications for Kik Points",
+        "Added automated UI tests using Selenium, WebDriverIO, PhantomJS",
+        "Designed and built user invite interface using Sketch 3"
+      ],
+      "comment": "David was amazing. He showed a great aptitude for learning and was a productive member of the team. By the end of the term he performed tasks that would otherwise have been worked on by senior members of the team."
+    }, {
+      "company": "i4i",
+      "position": "Quality Control Analyst",
+      "startDate": { "m": 5, "y": 2014 },
+      "endDate": { "m": 9, "y": 2014 },
+      "image": "logo-i4i.png",
+      "tasks": [
+        "Performed smoke and regression tests across many client environments"
+      ]
+    }
+  ],
   "projects": [
 		{
 			"title": "Acrodog",
