@@ -1,7 +1,16 @@
 @import "reset";
 
-$light-gray: #eee;
+$white: #fff;
+$light_gray: #eee;
+$mid_gray: #888;
+$dark_gray: #222;
+$black: #000;
+$bright_green: #34d16e;
 
+@mixin bubble($color) {
+  border-radius: 5px;
+  background-color: $color;
+}
 
 h1 {
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -9,27 +18,70 @@ h1 {
 
 h2 {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 36px;
+	font-size: 32px;
 	line-height: 100%;
 }
 
-p {
-	font-family: 'Lato', sans-serif;
-	font-size: 16px;
+h3 {
+	font-family: 'Muli', sans-serif;
+	font-size: 20px;
+	line-height: 100%;
+}
+
+h5 {
+	color: $mid_gray;
+	font-family: 'Muli', sans-serif;
+	font-size: 15px;
 	line-height: 120%;
 }
 
-@mixin bubble($color) {
-  border-radius: 5px;
-  background-color: $color;
-  padding: 10px;
+p {
+	font-family: 'Muli', sans-serif;
+	font-size: 15px;
+	line-height: 120%;
+}
+
+.wrap {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+nav {
+	z-index: 10;
+	background-color: $dark_gray;
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+}
+
+.nav-cell {
+	display: inline-block;
+	padding: 0 15px 0 15px;
+	h5 {
+		color: $light_gray;
+		line-height: 50px;
+	}
+	.nav-name {
+		color: $bright_green;
+	}
 }
 
 .project {
-  @include bubble($light-gray);
+  @include bubble($light_gray);
   width: 280px;
   overflow: hidden;
+	.project-header {
+		padding: 10px;
+	}
   .project-image {
-    
+    width: 100%;
   }
+	.project-footer {
+		padding: 10px;
+	}
 }

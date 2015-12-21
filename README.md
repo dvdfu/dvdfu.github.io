@@ -12,4 +12,4 @@ Compiling SCSS using Atom
 Assuming [Atom](https://atom.io/) is installed:
 * install [sass-autocompile](https://atom.io/packages/sass-autocompile)
 * `npm install node-sass -g `
-* save `style/style.scss`
+* compile using `ctrl+shift+C`
