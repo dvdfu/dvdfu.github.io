@@ -1,28 +1,34 @@
 var NavBar = React.createClass({
   render: function() {
-    var names = ['Info', 'Work', 'Projects', 'Contact'];
-    names = names.map(function(name, i) {
-      return (<NavButton name={name} key={i}/>);
-    });
     return (
       <nav>
         <ul className="wrap">
-          <li className="nav-cell">
-            <h5 className="nav-name">dvdfu</h5>
-          </li>
-          {names}
+          <NavButton name="dvdfu" logo={true}/>
+          <NavButton name="Info" icon="info"/>
+          <NavButton name="Work" icon="suitcase"/>
+          <NavButton name="Projects" icon="star"/>
+          <NavButton name="Contact" icon="envelope"/>
         </ul>
-      </nav>);
+      </nav>
+    );
   }
 });
 
 var NavButton = React.createClass({
   render: function() {
-    return (
-      <li className="nav-cell">
-        <h5>{this.props.name}</h5>
-      </li>
-    );
+    var className = this.props.logo ? 'logo' : '';
+    var content = (<h5 className={className}>{this.props.name}</h5>);
+    if (window.innerWidth < 420 && this.props.icon) {
+      content = (<i className={'fa fa-'+this.props.icon}></i>);
+    }
+    return (<li className="nav-cell">{content}</li>);
+  }
+});
+
+var NavIcon = React.createClass({
+  render: function() {
+    var icon = 'nav-icon fa fa-2x fa-'+this.props.icon;
+    return (<i className={icon}></i>);
   }
 });
 
@@ -101,3 +107,49 @@ var ProjectTools = React.createClass({
 });
 
 // ReactDOM.render(<Projects/>, document.getElementById('content'));
+
+var ContactBox = React.createClass({
+  render: function() {
+    return (
+      <div className="contact-box">
+        <ContactList/>
+        <p>Site handmade by <strong>David Fu</strong> using</p>
+        <p>
+          <a href="https://facebook.github.io/react/">React</a>&nbsp;&middot;&nbsp;
+          <a href="https://nodejs.org/en/">Node.js</a>&nbsp;&middot;&nbsp;
+          <a href="https://fortawesome.github.io/Font-Awesome/">Font Awesome</a>&nbsp;&middot;&nbsp;
+          <a href="https://www.google.com/fonts">Google Fonts</a>
+        </p>
+      </div>
+    );
+  }
+});
+
+var ContactList = React.createClass({
+  render: function() {
+    return (
+      <ul className="contact-list">
+        <Contact icon="github" link="https://github.com/dvdfu"/>
+        <Contact icon="linkedin" link="http://ca.linkedin.com/in/dvdfu"/>
+        <Contact icon="twitter" link="https://twitter.com/dvdfu"/>
+        <Contact icon="tumblr" link="http://dvdfu.tumblr.com"/>
+        <Contact icon="envelope" link="mailto:davidf1212@gmail.com"/>
+      </ul>
+    );
+  }
+});
+
+var Contact = React.createClass({
+  render: function() {
+    var className = 'fa fa-2x fa-'+this.props.icon;
+    return (
+      <li className="contact">
+        <a href={this.props.link}>
+          <i className={className}></i>
+        </a>
+      </li>
+    );
+  }
+});
+
+ReactDOM.render(<ContactBox/>, document.getElementById('footer'));
