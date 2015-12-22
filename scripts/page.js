@@ -1,6 +1,6 @@
 var Container = React.createClass({
   getInitialState: function() {
-    return {work: [], projects: []};
+    return {facts: [], work: [], projects: [], contacts: []};
   },
   componentDidMount: function() {
     $.getJSON('/data/data.json', function (data) {
@@ -11,8 +11,10 @@ var Container = React.createClass({
     return (
       <div>
         <NavBar/>
+        <Info facts={this.state.facts}/>
         <Work jobs={this.state.jobs}/>
-        <Footer/>
+        <Projects projects={this.state.projects}/>
+        <Footer contacts={this.state.contacts}/>
       </div>
     );
   }
@@ -52,69 +54,46 @@ var NavIcon = React.createClass({
   }
 });
 
-var ProjectList = React.createClass({
-  getInitialState: function() {
-    return {projects: []};
-  },
-  componentDidMount: function() {
-    $.getJSON('/data/data.json', function (data) {
-      this.setState({data: data});
-    }.bind(this));
-  },
+var Info = React.createClass({
   render: function() {
-    var projectList = this.state.data.projects.map(function(project, i) {
-      return (<Project data={project} key={i}/>);
-    });
     return (
-      <section className="projects">
-        {projectList}
+      <section className="info">
+        <FactList facts={this.props.facts}/>
       </section>
     );
   }
 });
 
-var Project = React.createClass({
-  statics: {
-    months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'],
-    formatData: function(data) {
-      var formatted = data;
-      formatted.image = 'images/' + data.type + '/' + data.image;
-      formatted.date = Project.months[data.date.m-1] + ' ' + data.date.y;
-      return formatted;
-    }
-  },
+var FactList = React.createClass({
   render: function() {
-    var data = Project.formatData(this.props.data);
-    var tools = data.tools ? (<ProjectTools tools={data.tools}/>) : null;
+    var facts = null;
+    if (this.props.facts) {
+      facts = this.props.facts.map(function(fact, i) {
+        return (
+          <Fact
+            icon={fact.icon}
+            name={fact.name}
+            description={fact.description}
+            key={i}
+          />
+        );
+      });
+    }
+    return (<ul className="fact-list">{facts}</ul>);
+  }
+});
+
+var Fact = React.createClass({
+  render: function() {
     return (
-      <div className="project">
-        <div className="project-header">
-          <ProjectTitle title={data.title} link={data.link}/>
-          <h5>{data.date}</h5>
+      <li className="fact">
+        <div className="fact-box">
+          <i className={'fa fa-3x fa-' + this.props.icon}></i>
         </div>
-        <img className="project-image" src={data.image}></img>
-        <div className="project-footer">
-          <p className="project-description">{data.desc}</p>
-          {tools}
-        </div>
-      </div>
+        <h3>{this.props.name}</h3>
+        <p>{this.props.description}</p>
+      </li>
     );
-  }
-});
-
-var ProjectTitle = React.createClass({
-  render: function() {
-    var title = this.props.title;
-    if (this.props.link) {
-      title = (<a href={this.props.link}>{this.props.title}</a>);
-    }
-    return (<h2>{title}</h2>);
-  }
-});
-
-var ProjectTools = React.createClass({
-  render: function() {
-    return (<h5>{this.props.tools.join(', ')}</h5>);
   }
 });
 
@@ -137,8 +116,8 @@ var JobList = React.createClass({
           <Job
             company={job.company}
             position={job.position}
-            tasks={job.tasks}
             image={job.image}
+            link={job.link}
             startDate={job.startDate}
             endDate={job.endDate}
             key={i}
@@ -160,21 +139,82 @@ var Job = React.createClass({
       date += ' ' + this.props.startDate.y;
     }
     date += ' - ' + Job.months[this.props.endDate.m - 1] + ' ' + this.props.endDate.y;
-    var tasks = this.props.tasks.map(function(task, i) {
-      return (<li key={i}><p>{task}</p></li>);
-    });
     return (
-      <div className="job">
-        <div className="job-header">
+      <li className="job">
+        <a href={this.props.link}>
           <img src={'/images/' + this.props.image}></img>
-          <div className="job-info">
-            <h3>{this.props.position}</h3>
-            <h5>{date}</h5>
-          </div>
+        </a>
+        <div className="job-info">
+          <h3>{this.props.position}</h3>
+          <h5>{date}</h5>
         </div>
-        <ul>{tasks}</ul>
-      </div>
+      </li>
     );
+  }
+});
+
+var Projects = React.createClass({
+  render: function() {
+    var projects = null;
+    if (this.props.projects) {
+      projects = this.props.projects.map(function(project, i) {
+        return (<Project data={project} key={i}/>);
+      });
+    }
+    return (
+      <section className="projects">
+        <ul className="project-list wrap">
+          {projects}
+        </ul>
+      </section>
+    );
+  }
+});
+
+var Project = React.createClass({
+  statics: {
+    months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'],
+    formatData: function(data) {
+      var formatted = data;
+      formatted.image = 'images/' + data.type + '/' + data.image;
+      formatted.date = Project.months[data.date.m-1] + ' ' + data.date.y;
+      return formatted;
+    }
+  },
+  render: function() {
+    var data = Project.formatData(this.props.data);
+    var tools = data.tools ? (<ProjectTools tools={data.tools}/>) : null;
+    var imageStyle = {backgroundImage: 'url(' + data.image + ')'};
+    return (
+      <li className="project">
+        <div className="project-header">
+          <ProjectTitle title={data.title} link={data.link}/>
+          <h5>{data.date}</h5>
+        </div>
+        <div className="project-image" style={imageStyle}>
+        </div>
+        <div className="project-footer">
+          <p className="project-description">{data.desc}</p>
+          {tools}
+        </div>
+      </li>
+    );
+  }
+});
+
+var ProjectTitle = React.createClass({
+  render: function() {
+    var title = this.props.title;
+    if (this.props.link) {
+      title = (<a href={this.props.link}>{this.props.title}</a>);
+    }
+    return (<h3>{title}</h3>);
+  }
+});
+
+var ProjectTools = React.createClass({
+  render: function() {
+    return (<h5>{this.props.tools.join(', ')}</h5>);
   }
 });
 
@@ -183,7 +223,7 @@ var Footer = React.createClass({
     return (
       <footer className="footer">
         <div className="contact-box">
-          <ContactList/>
+          <ContactList contacts={this.props.contacts}/>
           <p>Site handmade by <strong>David Fu</strong> using</p>
           <p>
             <a href="https://facebook.github.io/react/">React</a>&nbsp;&middot;&nbsp;
@@ -199,15 +239,13 @@ var Footer = React.createClass({
 
 var ContactList = React.createClass({
   render: function() {
-    return (
-      <ul className="contact-list">
-        <Contact icon="github" link="https://github.com/dvdfu"/>
-        <Contact icon="linkedin" link="http://ca.linkedin.com/in/dvdfu"/>
-        <Contact icon="twitter" link="https://twitter.com/dvdfu"/>
-        <Contact icon="tumblr" link="http://dvdfu.tumblr.com"/>
-        <Contact icon="envelope" link="mailto:davidf1212@gmail.com"/>
-      </ul>
-    );
+    var contacts = null;
+    if (this.props.contacts) {
+      contacts = this.props.contacts.map(function(contact, i) {
+        return (<Contact icon={contact.icon} link={contact.link} key={i}/>);
+      });
+    }
+    return (<ul className="contact-list">{contacts}</ul>);
   }
 });
 

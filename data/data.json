@@ -1,4 +1,27 @@
 {
+  "facts": [
+    {
+      "name": "Study",
+      "icon": "graduation-cap",
+      "description": "A 20-year old 3A Software Engineer studying at the University of Waterloo."
+    }, {
+      "name": "Code",
+      "icon": "code",
+      "description": "I love building clean and structured websites and games. I use JavaScript, C#, Java, C++, C, Ruby."
+    }, {
+      "name": "Game Dev",
+      "icon": "gamepad",
+      "description": "Ultra-passionate indie game developer. I've used Unity, Love2D, libGDX and am learning everyday."
+    }, {
+      "name": "Music",
+      "icon": "music",
+      "description": "I'm a perfect-pitch pianist/guitarist with years of practice and compose music, as well."
+    }, {
+      "name": "Art",
+      "icon": "paint-brush",
+      "description": "I love to draw digitally in my spare time. I've made artwork of all kinds and sold some at conventions."
+    }
+  ],
   "jobs": [
     {
       "company": "Uken Games",
@@ -6,6 +29,7 @@
       "startDate": { "m": 9, "y": 2015 },
       "endDate": { "m": 12, "y": 2015 },
       "image": "logo-uken.png",
+      "link": "http://uken.com/",
       "tasks": [
         "Used C# and UGUI extensively to build game features for a beta launch",
         "Wrote and merged 130 Unity and Rails pull requests in 15 weeks",
@@ -16,8 +40,9 @@
       "company": "Kik",
       "position": "Full Stack Web Developer",
       "startDate": { "m": 1, "y": 2015 },
-      "endDate": { "m": 5, "y": 2015 },
+      "endDate": { "m": 4, "y": 2015 },
       "image": "logo-kik.png",
+      "link": "http://www.kik.com/",
       "tasks": [
         "Implemented client SockJS push notifications for Kik Points",
         "Added automated UI tests using Selenium, WebDriverIO, PhantomJS",
@@ -28,8 +53,9 @@
       "company": "i4i",
       "position": "Quality Control Analyst",
       "startDate": { "m": 5, "y": 2014 },
-      "endDate": { "m": 9, "y": 2014 },
+      "endDate": { "m": 8, "y": 2014 },
       "image": "logo-i4i.png",
+      "link": "http://www.i4i.com/",
       "tasks": [
         "Performed smoke and regression tests across many client environments"
       ]
@@ -55,5 +81,23 @@
 			"tools": [ "Lua", "Love2D", "libGDX", "Java", "GLSL" ],
 			"type": "game"
 		}
+  ],
+  "contacts": [
+    {
+      "icon": "github",
+      "link": "https://github.com/dvdfu"
+    }, {
+      "icon": "linkedin",
+      "link": "http://ca.linkedin.com/in/dvdfu"
+    }, {
+      "icon": "twitter",
+      "link": "https://twitter.com/dvdfu"
+    }, {
+      "icon": "tumblr",
+      "link": "http://dvdfu.tumblr.com"
+    }, {
+      "icon": "envelope",
+      "link": "mailto:davidf1212@gmail.com"
+    }
   ]
 }
