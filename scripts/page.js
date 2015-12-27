@@ -1,6 +1,6 @@
 var Container = React.createClass({
   getInitialState: function() {
-    return {facts: [], work: [], projects: [], contacts: []};
+    return {facts: [], jobs: [], projects: [], contacts: []};
   },
   componentDidMount: function() {
     $.getJSON('/data/data.json', function (data) {
@@ -29,7 +29,6 @@ var NavBar = React.createClass({
         <NavButton name="Info" icon="info"/>
         <NavButton name="Work" icon="suitcase"/>
         <NavButton name="Projects" icon="star"/>
-        <NavButton name="Contact" icon="envelope"/>
         </ul>
       </nav>
     );
@@ -40,9 +39,6 @@ var NavButton = React.createClass({
   render: function() {
     var className = this.props.logo ? 'logo' : '';
     var content = (<h5 className={className}>{this.props.name}</h5>);
-    if (window.innerWidth < 420 && this.props.icon) {
-      content = (<i className={'fa fa-' + this.props.icon}></i>);
-    }
     return (<li className="nav-cell">{content}</li>);
   }
 });
@@ -163,7 +159,7 @@ var Projects = React.createClass({
     }
     return (
       <section className="projects">
-        <ul className="project-list wrap">
+        <ul className="project-list">
           {projects}
         </ul>
       </section>

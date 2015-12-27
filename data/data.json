@@ -73,12 +73,45 @@
 			"type": "game"
 		}, {
 			"title": "Scorched",
-			"link": "http://dvdfu.itch.io/panic",
-			"source": "https://github.com/dvdfu/ld34",
+			"source": "https://github.com/dvdfu/panic",
 			"date": { "m": 10, "y": 2015 },
 			"image": "scorched.gif",
 			"desc": "A fast-paced arcade game where the player tries to survive waves of molten monsters! In development.",
 			"tools": [ "Lua", "Love2D", "libGDX", "Java", "GLSL" ],
+			"type": "game"
+		}, {
+			"title": "Translate",
+			"source": "https://github.com/angelgao/CardboardTranslate",
+			"date": { "m": 9, "y": 2015},
+			"image": "cardboard-translate.png",
+			"desc": "A Cardboard project for Hack the North 2015 that translates written foreign text in real-time.",
+			"tools": [ "Java", "Android", "Google Translate", "Tesseract", "Cardboard" ],
+			"type": "code"
+		}, {
+			"title": "Space Golf",
+			"source": "https://github.com/dvdfu/space-golf",
+			"date": { "m": 9, "y": 2015},
+			"image": "space-golf.gif",
+			"desc": "Unity game developed in 4 days as a bootcamp project at Uken Games. Brings golf to a solar system with tricky orbitals.",
+			"tools": [ "C#", "Unity" ],
+			"type": "game"
+		}, {
+			"title": "Keytar",
+			"source": "https://github.com/andyzg/keytar",
+			"date": { "m": 6, "y": 2015},
+			"image": "keytar.png",
+			"desc": "A virtual keyboard Chrome extension that types using a guitar and microphone. EngHack Spring 2015 2nd place winner.",
+			"team": "2",
+			"tools": [ "Chrome", "JavaScript", "CSS", "HTML5" ],
+			"type": "code"
+		}, {
+			"title": "Sushi Ninja",
+			"source": "https://github.com/dvdfu/sushi-ninja",
+			"date": { "m": 5, "y": 2015},
+			"image": "sushi.gif",
+			"desc": "Multiplayer sushi-grabbing, ninja-dashing game made for GI Jam of Spring 2015. Won prize for most polished and completed!",
+			"team": "3",
+			"tools": [ "Love2D", "Lua" ],
 			"type": "game"
 		}
   ],
