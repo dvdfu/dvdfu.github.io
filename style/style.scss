@@ -52,7 +52,10 @@ body {
 }
 
 h1 {
-	color: $dark-gray;
+	color: $light-green;
+  text-transform: uppercase;
+	font-size: 100px;
+	line-height: 100%;
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 
@@ -91,7 +94,7 @@ strong {
 }
 
 .wrap {
-	max-width: 720px;
+	max-width: 900px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 15px;
@@ -126,8 +129,30 @@ strong {
 
 header {
   width: 100%;
-  height: 300px;
+  height: 400px;
   background-color: $darkish-gray;
+  position: relative;
+  h2 {
+    color: $white;
+  }
+}
+
+.name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  position: absolute;
+  opacity: 1;
+  left: 0;
+  transition: opacity 0.3s, left 0.3s;
+  &.hidden {
+    opacity: 0;
+    left: 100px;
+  }
 }
 
 section {
@@ -146,7 +171,7 @@ footer {
 }
 
 .section-description {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 	padding-left: 10px;
 	padding-right: 10px;
 }

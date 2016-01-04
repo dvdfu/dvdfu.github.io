@@ -11,7 +11,7 @@ var Container = React.createClass({
     return (
       <div>
         <NavBar/>
-        <Splash/>
+        <Splash titles={this.state.titles}/>
         <Info facts={this.state.facts} description={this.state.factDescription}/>
         <Projects projects={this.state.projects} description={this.state.projectDescription}/>
         <Footer contacts={this.state.contacts}/>
@@ -50,9 +50,22 @@ var NavIcon = React.createClass({
 });
 
 var Splash = React.createClass({
+  animate: function() {
+    var title = document.getElementsByClassName('title')[0];
+  },
   render: function() {
+    var title = '';
+    if (this.props.titles) {
+      title = this.props.titles[0];
+    }
+    setTimeout(this.animate, 1000);
     return (
-      <header className="splash"></header>
+      <header className="splash">
+        <div className="name">
+          <h1>David Fu</h1>
+          <h2 className="title">{title}</h2>
+        </div>
+      </header>
     );
   }
 });
