@@ -109,7 +109,6 @@ strong {
 	width: 100%;
 	height: 50px;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-	overflow: hidden;
   ul {
     height: 100%;
   }
@@ -119,8 +118,12 @@ strong {
   cursor: pointer;
 	float: left;
 	padding: 0 15px 0 15px;
-  &:active {
+  height: 100%;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  transition: background-color 0.3s, border 0.3s;
+  &:active, &:hover {
     background-color: $darkish-gray;
+    border-bottom: 2px solid $light-green;
   }
 	h5, .fa {
 		color: $light-gray;
