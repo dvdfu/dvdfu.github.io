@@ -1,3 +1,7 @@
+window.addEventListener('hashchange', function() {
+  scrollBy(0, -50);
+});
+
 var Container = React.createClass({
   getInitialState: function() {
     return {facts: [], jobs: [], projects: [], contacts: []};
@@ -25,9 +29,9 @@ var NavBar = React.createClass({
     return (
       <nav className="nav-bar">
         <ul className="wrap">
-        <NavButton name="dvdfu" logo={true}/>
-        <NavButton name="Info" icon="info"/>
-        <NavButton name="Projects" icon="star"/>
+        <NavButton name="dvdfu" logo={true} clickHash="#splash"/>
+        <NavButton name="Info" icon="info" clickHash="#info"/>
+        <NavButton name="Projects" icon="star" clickHash="#projects"/>
         </ul>
       </nav>
     );
@@ -35,9 +39,15 @@ var NavBar = React.createClass({
 });
 
 var NavButton = React.createClass({
+  clickHandler: function(hash) {
+    location.hash = hash;
+  },
   render: function() {
     var className = this.props.logo ? 'logo' : '';
-    var content = (<h5 className={className}>{this.props.name}</h5>);
+    var content = (
+      <h5 className={className} onClick={this.clickHandler.bind(this, this.props.clickHash)}>
+        {this.props.name}
+      </h5>);
     return (<li className="nav-cell">{content}</li>);
   }
 });
@@ -78,7 +88,7 @@ var Splash = React.createClass({
   },
   render: function() {
     return (
-      <header className="splash">
+      <header id="splash" className="splash">
         <div className="name">
           <h1>David Fu</h1>
           <h2 className="title hidden"></h2>
@@ -91,7 +101,7 @@ var Splash = React.createClass({
 var Info = React.createClass({
   render: function() {
     return (
-      <section className="info">
+      <section id="info" className="info">
         <div className="section-description wrap">
           <h2>Info</h2>
           <p>{this.props.description}</p>
@@ -200,7 +210,7 @@ var Projects = React.createClass({
       });
     }
     return (
-      <section className="projects">
+      <section id="projects" className="projects">
         <div className="section-description wrap">
           <h2>Projects</h2>
           <p>{this.props.description}</p>
