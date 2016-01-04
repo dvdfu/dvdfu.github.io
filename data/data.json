@@ -1,221 +1,248 @@
 {
-	"facts" : [
-		{
-			"name"  : "Study",
-			"icon"  : "fa-book",
-			"desc"  : "A 20-year old 3A Software Engineer studying at the University of Waterloo."
-		}, {
-			"name"  : "Code",
-			"icon"  : "fa-code",
-			"desc"  : "I love building clean and structured websites and games. I use JavaScript, C#, Java, C++, C, Ruby."
-		}, {
-			"name"  : "Game Dev",
-			"icon"  : "fa-gamepad",
-			"desc"  : "Ultra-passionate indie game developer. I've used Unity, Love2D, libGDX and am learning everyday."
-		}, {
-			"name"  : "Music",
-			"icon"  : "fa-music",
-			"desc"  : "I'm a perfect-pitch pianist/guitarist with years of practice and compose music, as well."
-		}, {
-			"name"  : "Art",
-			"icon"  : "fa-paint-brush",
-			"desc"  : "I love to draw digitally in my spare time. I've made artwork of all kinds and sold some at conventions."
-		}
-	],
-	"projects" : [
-		{
-			"name"  : "Acrodog",
-			"url"	: "http://dvdfu.itch.io/acrodog",
-			"source": "https://github.com/dvdfu/ld34",
-			"date"  : "Dec 2015",
-			"img"   : "acrodog.gif",
-			"desc"  : "2-day project for Ludum Dare 34. Help your stunt dog stay in the spotlight in this charming 2-button action game.",
-			"tools" : [ "Lua", "Love2D", "Box2D" ],
-			"type"  : "game"
-		}, {
-			"name"  : "Scorched",
-			"source": "https://github.com/dvdfu/panic",
-			"date"  : "Oct 2015",
-			"img"   : "scorched.gif",
-			"desc"  : "A fast-paced arcade game where the player tries to survive waves of molten monsters! In development.",
-			"tools" : [ "Lua", "Love2D", "libGDX", "Java", "GLSL" ],
-			"type"  : "game"
-		}, {
-			"name"  : "Translate",
-			"source": "https://github.com/angelgao/CardboardTranslate",
-			"date"  : "Sept 2015",
-			"img"   : "cardboard-translate.png",
-			"desc"  : "A Google Cardboard project for Hack the North 2015 that translates written foreign text in real-time.",
-			"tools" : [ "Java", "Android", "Google Translate API", "Tesseract", "Google Cardboard" ],
-			"type"  : "code"
-		}, {
-			"name"  : "Space Golf",
-			"source": "https://github.com/dvdfu/space-golf",
-			"date"  : "Sept 2015",
-			"img"   : "space-golf.gif",
-			"desc"  : "Unity game developed in 4 days as a bootcamp project at Uken Games. Brings golf to a solar system with tricky orbitals.",
-			"tools" : [ "C#", "Unity" ],
-			"type"  : "game"
-		}, {
-			"name"  : "Keytar",
-			"source": "https://github.com/andyzg/keytar",
-			"date"  : "June 2015",
-			"img"   : "keytar.png",
-			"desc"  : "A Chrome extension where users type on a modified keyboard using a microphone and guitar. 2nd place winner at EngHack Spring 2015.",
-			"team"	: "2",
-			"tools" : [ "Chrome", "JavaScript", "CSS", "HTML5" ],
-			"type"  : "code"
-		}, {
-			"name"  : "Sushi Ninja",
-			"source": "https://github.com/dvdfu/sushi-ninja",
-			"date"  : "May 2015",
-			"img"   : "sushi.gif",
-			"desc"  : "Multiplayer sushi-grabbing, ninja-dashing game made for GI Jam of Spring 2015. Won prize for most polished and completed!",
-			"team"	: "3",
-			"tools" : [ "Love2D", "Lua" ],
-			"type"  : "game"
-		}, {
-			"name"  : "Crystal Temple",
-			"date"  : "May 2015",
-			"img"   : "steven-universe.png",
-			"desc"  : "A detailed illustration of Steven Universe and the Crystal Gems, the main characters of Steven Universe.",
-			"type"  : "art",
-			"hide"	: true
-		}, {
-			"name"  : "Sun Slayer",
-			"url"	: "http://dvdfu.itch.io/sun-slayer",
-			"source": "https://github.com/dvdfu/sun-slayer",
-			"date"  : "Apr 2015",
-			"img"   : "sun-slayer.gif",
-			"desc"  : "2-day project for Ludum Dare 32, themed around unconventional weapons. Play as a fire hydrant and extinguish the sun.",
-			"tools" : [ "Love2D", "Lua" ],
-			"type"  : "game"
-		}, {
-			"name"  : "Hop Potato",
-			"source": "https://github.com/dvdfu/hop-potato",
-			"date"  : "Apr 2015",
-			"img"   : "hop-potato.gif",
-			"desc"  : "Multiplayer party game that brings 8 players together in an intense, frantic game of hot potato. Winner of Kik Hack Week 15.04.",
-			"team"  : "3",
-			"tools" : [ "Love2D", "Lua" ],
-			"type"  : "game"
-		}, {
-			"name"  : "Filespace",
-			"url"   : "https://infinitefilespace.herokuapp.com/",
-			"source": "https://github.com/BlakeBrown/infinitefilespace",
-			"date"  : "Mar 2015",
-			"img"   : "filespace.png",
-			"desc"  : "Webapp that aggregates online file storages like Dropbox and Drive. Built at Hack Western 2015.",
-			"team"  : "4",
-			"tools" : [ "Node.js", "jQuery", "Dropbox API", "Google Drive API" ],
-			"type"  : "code"
-		}, {
-			"name"  : "My Website",
-			"url"   : "http://dvdfu.me/",
+  "titles": [
+    "Coder",
+    "Musician",
+    "Game Dev",
+    "Artist",
+    "Creator",
+    "Designer",
+    "Blogger",
+    "Smash Brother"
+  ],
+  "factDescription": "I'm a fast and dedicated learner with cross-disciplinary talents. I love being able to use my knowledge and experience to creatively and productively take on new projects and challenges. Here are some things I like to put my time into.",
+  "facts": [
+    {
+      "name": "Study",
+      "icon": "graduation-cap",
+      "description": "A 20-year old 3A Software Engineer studying at the University of Waterloo."
+    }, {
+      "name": "Code",
+      "icon": "code",
+      "description": "I love building clean and structured websites and games. I use JavaScript, C#, Lua, Java, C++, C, Ruby."
+    }, {
+      "name": "Game Dev",
+      "icon": "gamepad",
+      "description": "Ultra-passionate indie game developer. I've used Unity, Love2D, libGDX and am learning everyday."
+    }, {
+      "name": "Music",
+      "icon": "music",
+      "description": "I'm a perfect-pitch pianist/guitarist with years of practice and compose music, as well."
+    }, {
+      "name": "Art",
+      "icon": "paint-brush",
+      "description": "I love to draw digitally in my spare time. I've made artwork of all kinds and sold some at conventions."
+    }
+  ],
+  "jobs": [
+    {
+      "company": "Uken Games",
+      "position": "Game Software Developer",
+      "startDate": { "m": 9, "y": 2015 },
+      "endDate": { "m": 12, "y": 2015 },
+      "image": "logo-uken.png",
+      "link": "http://uken.com/",
+      "tasks": [
+        "Used C# and UGUI extensively to build game features for a beta launch",
+        "Wrote and merged 130 Unity and Rails pull requests in 15 weeks",
+        "Used internal frameworks to record user activity for analytic purposes"
+      ],
+      "comment": "Over the course of David's work term he has been a dependable worker that has been willing to take on difficult problems. I've been impressed with his ability to learn quickly and be able to work in areas without much prior knowledge of how they work. It's been a pleasure working with David, we wish him all the best."
+    }, {
+      "company": "Kik",
+      "position": "Full Stack Web Developer",
+      "startDate": { "m": 1, "y": 2015 },
+      "endDate": { "m": 4, "y": 2015 },
+      "image": "logo-kik.png",
+      "link": "http://www.kik.com/",
+      "tasks": [
+        "Implemented client SockJS push notifications for Kik Points",
+        "Added automated UI tests using Selenium, WebDriverIO, PhantomJS",
+        "Designed and built user invite interface using Sketch 3"
+      ],
+      "comment": "David was amazing. He showed a great aptitude for learning and was a productive member of the team. By the end of the term he performed tasks that would otherwise have been worked on by senior members of the team."
+    }, {
+      "company": "i4i",
+      "position": "Quality Control Analyst",
+      "startDate": { "m": 5, "y": 2014 },
+      "endDate": { "m": 8, "y": 2014 },
+      "image": "logo-i4i.png",
+      "link": "http://www.i4i.com/",
+      "tasks": [
+        "Performed smoke and regression tests across many client environments"
+      ]
+    }
+  ],
+  "projectDescription": "Creative and technical contributions and responsibilities are valuable to me when working on projects in teams, as well as independently. Likewise, I love hackathons, game jams, and simply building things in my own free time. Here's just a little bit of what I've been working on.",
+  "projects": [
+    {
+			"title": "My Website",
+			"link": "http://dvdfu.net",
 			"source": "https://github.com/dvdfu/dvdfu.github.io",
-			"date"  : "Mar 2015",
-			"img"   : "personal-website.png",
-			"desc"  : "Designed vertically and mobile-friendly, this website shows off my abilities and interests.",
-			"tools" : [ "jQuery", "Javascript", "CSS3", "JSON" ],
-			"type"  : "code"
+			"date": { "m": 1, "y": 2016 },
+			"image": "website.png",
+			"desc": "Designed vertically and mobile-friendly, this website shows off my abilities and interests. Redesigned in 2016 using React.",
+			"tools": [ "JavaScript", "React", "Sass", "Node.js" ],
+			"type": "code"
 		}, {
-			"name"  : "Frog Smileys",
-			"date"  : "Mar 2015",
-			"img"   : "frogs.png",
-			"desc"  : "Mockups of potential smileys for the Kik messenger, designed to match their existing style.",
-			"type"  : "art"
+			"title": "Acrodog",
+			"link": "http://dvdfu.itch.io/acrodog",
+			"source": "https://github.com/dvdfu/ld34",
+			"date": { "m": 12, "y": 2015 },
+			"image": "acrodog.png",
+			"desc": "2-day project for Ludum Dare 34. Help your stunt dog stay in the spotlight in this charming 2-button action game.",
+			"tools": [ "Lua", "Love2D", "Box2D" ],
+			"type": "game"
 		}, {
-			"name"  : "The Resistance",
-			"url"   : "https://play-resistance.herokuapp.com/",
+			"title": "Scorched",
+			"source": "https://github.com/dvdfu/panic",
+			"date": { "m": 10, "y": 2015 },
+			"image": "scorched.png",
+			"desc": "A fast-paced arcade game where the player tries to survive waves of molten monsters! In development.",
+			"tools": [ "Lua", "Love2D", "Java", "libGDX", "GLSL" ],
+			"type": "game"
+		}, {
+			"title": "Translate",
+			"source": "https://github.com/angelgao/CardboardTranslate",
+			"date": { "m": 9, "y": 2015},
+			"image": "cardboard-translate.png",
+			"desc": "A Cardboard project for Hack the North 2015 that translates written foreign text in real-time.",
+			"tools": [ "Java", "Android", "Google Translate", "Tesseract", "Cardboard" ],
+			"type": "code"
+		}, {
+			"title": "Space Golf",
+			"source": "https://github.com/dvdfu/space-golf",
+			"date": { "m": 9, "y": 2015},
+			"image": "space-golf.png",
+			"desc": "Unity game developed in 4 days as a bootcamp project at Uken Games. Brings golf to a solar system with tricky orbitals.",
+			"tools": [ "C#", "Unity" ],
+			"type": "game"
+		}, {
+			"title": "Keytar",
+			"source": "https://github.com/andyzg/keytar",
+			"date": { "m": 6, "y": 2015},
+			"image": "keytar.png",
+			"desc": "A virtual keyboard Chrome extension that types using a guitar and microphone. EngHack Spring 2015 2nd place winner.",
+			"tools": [ "JavaScript", "Chrome Extension API" ],
+			"type": "code"
+		}, {
+			"title": "Sushi Ninja",
+			"source": "https://github.com/dvdfu/sushi-ninja",
+			"date": { "m": 5, "y": 2015},
+			"image": "sushi.png",
+			"desc": "Multiplayer sushi-grabbing, ninja-dashing game made for GI Jam of Spring 2015. Won prize for most polished and completed!",
+			"tools": [ "Lua", "Love2D" ],
+			"type": "game"
+		}, {
+			"title": "Sun Slayer",
+			"source": "http://dvdfu.itch.io/sun-slayer",
+			"date": { "m": 4, "y": 2015},
+			"image": "sun-slayer.png",
+			"desc": "2-day project for Ludum Dare 32, themed around unconventional weapons. Play as a fire hydrant and extinguish the sun.",
+			"tools": [ "Lua", "Love2D" ],
+			"type": "game"
+		}, {
+			"title": "Hop Potato",
+			"source": "http://dvdfu.itch.io/hop-potato",
+			"date": { "m": 4, "y": 2015},
+			"image": "hop-potato.png",
+			"desc": "Multiplayer party game that brings 8 players together in an intense, frantic game of hot potato. Winner of Kik Hack Week 15.04.",
+			"tools": [ "Lua", "Love2D" ],
+			"type": "game"
+		}, {
+			"title": "Filespace",
+      "link": "https://infinitefilespace.herokuapp.com/",
+			"source": "https://github.com/BlakeBrown/infinitefilespace",
+			"date": { "m": 3, "y": 2015},
+			"image": "filespace.png",
+			"desc": "Webapp that aggregates online file storages like Dropbox and Drive. Built at Hack Western 2015.",
+			"tools": [ "JavaScript", "Node.js", "jQuery", "Dropbox API", "Google Drive API" ],
+			"type": "code"
+		}, {
+			"title": "The Resistance",
+      "link": "https://play-resistance.herokuapp.com/",
 			"source": "https://github.com/dvdfu/resistance-web",
-			"date"  : "Mar 2015",
-			"img"   : "the-resistance.png",
-			"desc"  : "Top-10 EngHack Winter 2015 project. Helper webapp for 'The Resistance', eliminating physical boards, cards, and counters.",
-			"team"  : "2",
-			"tools" : [ "Node.js", "socket.io", "Javascript", "CSS3" ],
-			"type"  : "code"
+			"date": { "m": 3, "y": 2015},
+			"image": "the-resistance.png",
+			"desc": "Top-10 EngHack Winter 2015 project. Helper webapp for 'The Resistance', eliminating physical boards, cards, and counters.",
+			"tools": [ "Javascript", "Node.js", "socket.io" ],
+			"type": "code"
 		}, {
-			"name"  : "Match 3",
-			"url"   : "http://match-3.herokuapp.com",
+			"title": "Match 3",
+      "link": "http://match-3.herokuapp.com",
 			"source": "https://github.com/dvdfu/match-3",
-			"date"  : "Feb 2015",
-			"img"   : "match-3.png",
-			"desc"  : "Top-3 project at the Kik hackathon. Enter a game room using Kik and compete in real-time to find matching patterns!",
-			"team"  : "4",
-			"tools" : [ "Node.js", "socket.io", "Kik API", "Javascript", "CSS3" ],
-			"type"  : "code"
+			"date": { "m": 2, "y": 2015},
+			"image": "match-3.png",
+			"desc": "Top-3 Kik hackathon project. Enter a game room and compete in real-time to find matching patterns!",
+			"tools": [ "Javascript", "Node.js", "socket.io", "Kik API" ],
+			"type": "code"
 		}, {
-			"name"  : "Garden Guard",
+			"title": "Gardineering",
 			"source": "https://github.com/dvdfu/winter-gi-jam",
-			"date"  : "Jan 2015",
-			"img"   : "garden-guardian.gif",
-			"desc"  : "2-player turn-based strategy game at the Winter 2015 GI Jam. Compete to grow, water, and cut trees on a shared land.",
-			"tools" : [ "libGDX", "Java" ],
-			"type"  : "game"
+			"date": { "m": 1, "y": 2015},
+			"image": "garden.png",
+			"desc": "2-player turn-based strategy game at the Winter 2015 GI Jam. Compete to grow, water, and cut trees on a shared land.",
+			"tools": [ "Java", "libGDX" ],
+			"type": "game"
 		}, {
-			"name"  : "Little UFO",
+			"title": "Little UFO",
 			"source": "https://github.com/dvdfu/UFO",
-			"date"  : "Jan 2015",
-			"img"   : "UFO.gif",
-			"desc"  : "Control a UFO in a randomly generated terrain and abduct various objects that respond to physics.",
-			"tools" : [ "libGDX", "Box2D", "Java" ],
-			"type"  : "game"
+			"date": { "m": 1, "y": 2015},
+			"image": "ufo.png",
+			"desc": "Control a UFO in a randomly generated terrain and abduct various objects that respond to physics.",
+			"tools": [ "Java", "libGDX", "Box2D" ],
+			"type": "game"
 		}, {
-			"name"  : "The Avatar",
-			"date"  : "Dec 2014",
-			"img"   : "korra.png",
-			"desc"  : "Figure drawing sketch practice of Avatar Korra. Drawn in celebration of the series finale of The Legend of Korra.",
-			"type"  : "art",
-			"hide"	: true
-		}, {
-			"name"  : "Smash Tracker",
-			"url"	: "http://smash-tracker.herokuapp.com/",
+			"title": "Smash Tracker",
+      "link": "http://smash-tracker.herokuapp.com/",
 			"source": "https://github.com/Nosajool/smash-tracker",
-			"date"  : "Nov 2014",
-			"img"   : "smash-tracker.png",
-			"desc"  : "Simple Rails webapp to store, search, and compare Super Smash Bros. 1-on-1 match and player records.",
-			"team"  : "3",
-			"tools" : [ "Ruby", "Rails" ],
-			"type"  : "code"
+			"date": { "m": 11, "y": 2014},
+			"image": "smash-tracker.png",
+			"desc": "Simple Rails webapp to store, search, and compare Super Smash Bros. 1-on-1 match and player records.",
+			"tools": [ "Ruby", "Rails" ],
+			"type": "code"
 		}, {
-			"name"  : "Highrise",
-			"date"  : "Nov 2014",
-			"img"   : "apartment.png",
-			"desc"  : "A modernized rendering of an imaginary living room. Drawn as practice for one-point perspective and interior design.",
-			"type"  : "art"
-		}, {
-			"name"  : "Fiery Flight",
+			"title": "Fiery Flight",
 			"source": "https://github.com/dvdfu/fiery-flight",
-			"date"  : "Oct 2014",
-			"img"   : "fiery-flight.gif",
-			"desc"  : "2-player co-op game, winner of the Fall 2014 GI Jam Player's Choice Award. Work together with mouse and keyboard to chase your fiery nemesis!",
-			"team"  : "3",
-			"tools" : [ "libGDX", "Java" ],
-			"type"  : "game"
+			"date": { "m": 10, "y": 2014},
+			"image": "fiery-flight.png",
+			"desc": "Winner of the Fall 2014 GI Jam Player's Choice. Work together with mouse and keyboard to chase your fiery nemesis!",
+			"tools": [ "Java", "libGDX" ],
+			"type": "game"
 		}, {
-			"name"  : "Wordasm",
-			"url"	: "http://wordasm.herokuapp.com/",
+			"title": "Wordasm",
+      "link": "http://wordasm.herokuapp.com/",
 			"source": "https://github.com/Nosajool/Wordasm",
-			"date"  : "Sept 2014",
-			"img"   : "wordasm.png",
-			"desc"  : "A chatroom/word game hybrid at Hack the North 2014 where players compete in real-time to find words quickly.",
-			"team"  : "4",
-			"tools" : [ "Node.js", "socket.io", "Javascript", "Facebook API", "Bootstrap" ],
-			"type"  : "code"
+			"date": { "m": 9, "y": 2014},
+			"image": "wordasm.png",
+			"desc": "Player compete in real-time to build words using jumbled letters. Hack the North 2014.",
+			"tools": [ "Javascript", "Node.js", "socket.io", "Facebook API", "Bootstrap" ],
+			"type": "code"
 		}, {
-			"name"  : "Mineral Miner",
+			"title": "Mineral Miner",
 			"source": "https://github.com/dvdfu/gem-puzzle",
-			"date"  : "June 2014",
-			"img"   : "gem.gif",
-			"desc"  : "A puzzle game that challenges players to navigate, match, and collect gems on a grid.",
-			"tools" : [ "libGDX", "Java" ],
-			"type"  : "game"
-		}, {
-			"name"  : "Adventure Time",
-			"date"  : "May 2014",
-			"img"   : "adventure-time.png",
-			"desc"  : "A detailed rendering of main Adventure Time cast members playing music together.",
-			"type"  : "art"
+			"date": { "m": 6, "y": 2014},
+			"image": "gem.png",
+			"desc": "A puzzle game that challenges players to navigate, match, and collect gems on a grid.",
+			"tools": [ "Java", "libGDX" ],
+			"type": "game"
 		}
-	]
+  ],
+  "contacts": [
+    {
+      "icon": "github",
+      "link": "https://github.com/dvdfu"
+    }, {
+      "icon": "linkedin",
+      "link": "http://ca.linkedin.com/in/dvdfu"
+    }, {
+      "icon": "twitter",
+      "link": "https://twitter.com/dvdfu"
+    }, {
+      "icon": "tumblr",
+      "link": "http://dvdfu.tumblr.com"
+    }, {
+      "icon": "envelope",
+      "link": "mailto:davidf1212@gmail.com"
+    }
+  ]
 }
