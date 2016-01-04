@@ -11,8 +11,8 @@ var Container = React.createClass({
     return (
       <div>
         <NavBar/>
+        <Splash/>
         <Info facts={this.state.facts}/>
-        <Work jobs={this.state.jobs}/>
         <Projects projects={this.state.projects}/>
         <Footer contacts={this.state.contacts}/>
       </div>
@@ -27,7 +27,6 @@ var NavBar = React.createClass({
         <ul className="wrap">
         <NavButton name="dvdfu" logo={true}/>
         <NavButton name="Info" icon="info"/>
-        <NavButton name="Work" icon="suitcase"/>
         <NavButton name="Projects" icon="star"/>
         </ul>
       </nav>
@@ -47,6 +46,14 @@ var NavIcon = React.createClass({
   render: function() {
     var icon = 'nav-icon fa fa-2x fa-' + this.props.icon;
     return (<i className={icon}></i>);
+  }
+});
+
+var Splash = React.createClass({
+  render: function() {
+    return (
+      <section className="splash"></section>
+    );
   }
 });
 
@@ -172,7 +179,7 @@ var Project = React.createClass({
     months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'],
     formatData: function(data) {
       var formatted = data;
-      formatted.image = 'images/' + data.type + '/' + data.image;
+      formatted.image = 'images/projects/' + data.image;
       formatted.date = Project.months[data.date.m-1] + ' ' + data.date.y;
       return formatted;
     }
