@@ -51,19 +51,32 @@ var NavIcon = React.createClass({
 
 var Splash = React.createClass({
   animate: function() {
-    var title = document.getElementsByClassName('title')[0];
+    var $title = document.getElementsByClassName('title')[0];
+    var index = this.state.titleIndex;
+    var newTitle = this.props.titles[index];
+
+    $title.innerText = newTitle;
+    $title.classList.remove('hidden');
+
+    var that = this;
+
+    setTimeout(function() {
+      $title.classList.add('hidden');
+      index = (index + 1) % that.props.titles.length;
+      that.setState({ titleIndex: index }, function() {
+        setTimeout(that.animate, 500);
+      });
+    }, 2000)
+  },
+  componentWillReceiveProps: function(props) {
+    this.setState({ titleIndex: 0 }, this.animate);
   },
   render: function() {
-    var title = '';
-    if (this.props.titles) {
-      title = this.props.titles[0];
-    }
-    setTimeout(this.animate, 1000);
     return (
       <header className="splash">
         <div className="name">
           <h1>David Fu</h1>
-          <h2 className="title">{title}</h2>
+          <h2 className="title"></h2>
         </div>
       </header>
     );
