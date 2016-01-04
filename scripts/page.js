@@ -12,8 +12,8 @@ var Container = React.createClass({
       <div>
         <NavBar/>
         <Splash/>
-        <Info facts={this.state.facts}/>
-        <Projects projects={this.state.projects}/>
+        <Info facts={this.state.facts} description={this.state.factDescription}/>
+        <Projects projects={this.state.projects} description={this.state.projectDescription}/>
         <Footer contacts={this.state.contacts}/>
       </div>
     );
@@ -52,7 +52,7 @@ var NavIcon = React.createClass({
 var Splash = React.createClass({
   render: function() {
     return (
-      <section className="splash"></section>
+      <header className="splash"></header>
     );
   }
 });
@@ -61,6 +61,10 @@ var Info = React.createClass({
   render: function() {
     return (
       <section className="info">
+        <div className="section-description wrap">
+          <h2>Info</h2>
+          <p>{this.props.description}</p>
+        </div>
         <FactList facts={this.props.facts}/>
       </section>
     );
@@ -166,6 +170,10 @@ var Projects = React.createClass({
     }
     return (
       <section className="projects">
+        <div className="section-description wrap">
+          <h2>Projects</h2>
+          <p>{this.props.description}</p>
+        </div>
         <ul className="project-list">
           {projects}
         </ul>
