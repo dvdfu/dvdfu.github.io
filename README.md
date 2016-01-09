@@ -21,3 +21,7 @@ Assuming [Atom](https://atom.io/) is installed:
 * `npm install node-sass -g `
 * open `style/style.scss`
 * compile using `ctrl+shift+C`
+
+## webpack
+
+After `npm install` completes successfully, type `webpack` to compile scripts.

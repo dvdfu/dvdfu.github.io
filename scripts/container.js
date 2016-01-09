@@ -1,11 +1,10 @@
 var React = require('react');
 var JQuery = require('jquery');
-var NavBar = require('./nav-bar');
+var NavButton = require('./nav-button');
 var Splash = require('./splash');
 var FactList = require('./fact-list');
-var JobList = require('./job-list');
 var ProjectList = require('./project-list');
-var Footer = require('./footer');
+var ContactList = require('./contact-list');
 
 var Container = React.createClass({
   getInitialState: function() {
@@ -19,12 +18,29 @@ var Container = React.createClass({
   render: function() {
     return (
       <div>
-        <NavBar/>
+        <nav className="nav-bar">
+          <ul className="wrap">
+          <NavButton name="dvdfu" logo={true} clickHash="#splash"/>
+          <NavButton name="Info" icon="info" clickHash="#info"/>
+          <NavButton name="Projects" icon="star" clickHash="#projects"/>
+          </ul>
+        </nav>
         <Splash titles={this.state.titles}/>
         <FactList facts={this.state.facts} description={this.state.factDescription}/>
-        <JobList facts={this.state.jobs}/>
         <ProjectList projects={this.state.projects} description={this.state.projectDescription}/>
-        <Footer contacts={this.state.contacts}/>
+        <footer className="footer">
+          <div className="contact-box">
+            <ContactList contacts={this.state.contacts}/>
+            <p>Site handmade by <strong>David Fu</strong> using</p>
+            <p>
+              <a href="https://facebook.github.io/react/">React</a>&nbsp;&middot;&nbsp;
+              <a href="http://webpack.github.io/">webpack</a>&nbsp;&middot;&nbsp;
+              <a href="https://nodejs.org/en/">Node.js</a>&nbsp;&middot;&nbsp;
+              <a href="https://fortawesome.github.io/Font-Awesome/">Font Awesome</a>&nbsp;&middot;&nbsp;
+              <a href="https://www.google.com/fonts">Google Fonts</a>
+            </p>
+          </div>
+        </footer>
       </div>
     );
   }
