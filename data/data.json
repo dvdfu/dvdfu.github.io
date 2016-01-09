@@ -81,7 +81,7 @@
 			"date": { "m": 1, "y": 2016 },
 			"image": "website.png",
 			"desc": "Designed vertically and mobile-friendly, this website shows off my abilities and interests. Redesigned in 2016 using React.",
-			"tools": [ "JavaScript", "React", "Sass", "Node.js" ],
+			"tools": [ "JavaScript", "React", "Sass", "webpack", "Node.js" ],
 			"type": "code"
 		}, {
 			"title": "Acrodog",

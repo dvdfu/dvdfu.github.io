@@ -3,8 +3,6 @@
 * ES6 refactor
 * Grunt
   * SASS compilation
-  * JSHint
-  * bundle script files
   * local server
 * project modals
 * resume link
