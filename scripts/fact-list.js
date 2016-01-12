@@ -23,6 +23,11 @@ var FactList = React.createClass({
           <p>{this.props.description}</p>
         </div>
         <ul className="fact-list">{facts}</ul>
+        <div className="resume">
+          <h3>
+            Here is my <a href="../data/resume_w16.pdf">resume</a>.
+          </h3>
+        </div>
       </section>
     );
   }

@@ -141,7 +141,7 @@ strong {
 header {
   width: 100%;
   height: 400px;
-  background-color: $darkish-gray;
+  background-color: $dark-gray;
   position: relative;
   overflow: hidden;
   h2 {
@@ -150,9 +150,9 @@ header {
   .background {
     background-image: url('../images/projects/gif/scorched.gif');
     background-size: cover;
+    background-position: 50% 50%;
     width: 100%;
     height: 100%;
-    z-index: 1;
     -webkit-filter: blur(5px);
   }
 }
@@ -201,8 +201,14 @@ footer {
   }
 }
 
-.fact-list {
-	text-align: center;
+.info {
+  text-align: center;
+  a {
+    color: $light-green;
+  }
+  h3 {
+    color: $mid-gray;
+  }
 }
 
 .fact {
