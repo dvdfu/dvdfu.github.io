@@ -30,6 +30,7 @@ var Splash = React.createClass({
   render: function() {
     return (
       <header id="splash" className="splash">
+        <div className="background"></div>
         <div className="name">
           <h1>David Fu</h1>
           <h2 className="title hidden"></h2>
