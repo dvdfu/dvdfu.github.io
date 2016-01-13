@@ -25,7 +25,7 @@ var FactList = React.createClass({
         <ul className="fact-list">{facts}</ul>
         <div className="resume">
           <h3>
-            Here is my <a href="../data/resume_w16.pdf">resume</a>.
+            Here is my <a href="../data/resume_w16.pdf">résumé</a>.
           </h3>
         </div>
       </section>
