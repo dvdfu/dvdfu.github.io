@@ -11,16 +11,14 @@
 
 Assuming [Node.js/npm](https://nodejs.org/en/) are installed:
 * `npm install`
-* `npm start`
+* `npm run server`
 * visit `localhost:3000`
 
-## Compiling SCSS using Atom
+## Compiling SCSS
 
-Assuming [Atom](https://atom.io/) is installed:
-* install [sass-autocompile](https://atom.io/packages/sass-autocompile)
-* `npm install node-sass -g `
-* open `style/style.scss`
-* compile using `ctrl+shift+C`
+Assuming Ruby is installed:
+* `sudo gem install sass`
+* `npm run sass`
 
 ## webpack
 
