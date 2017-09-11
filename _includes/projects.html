@@ -1,0 +1,16 @@
+<div>
+{% for group in site.data.projects %}
+  <h2>{{ group.year }}</h2>
+  {% for project in group.projects %}
+    <p>
+      {% if project.icon %}
+      <i class="project-icon fa fa-{{ project.icon }}"></i>
+      {% endif %}
+      <a class="project" href="{{ project.link }}">{{ project.name }}</a>
+      {% if project.event %}
+      - {{ project.event }}
+      {% endif %}
+    </p>
+  {% endfor %}
+{% endfor %}
+</div>
