@@ -14,13 +14,13 @@
   icon: github
   link: https://github.com/dvdfu
 
-- name: Medium
-  icon: medium
-  link: https://medium.com/@dvdfu
-
-- name: Dribbble
-  icon: dribbble
-  link: https://dribbble.com/dvdfu
+# - name: Medium
+#   icon: medium
+#   link: https://medium.com/@dvdfu
+#
+# - name: Dribbble
+#   icon: dribbble
+#   link: https://dribbble.com/dvdfu
 
 # - name: SoundCloud
 #   icon: soundcloud

@@ -22,10 +22,10 @@
     </section>
 
     <section class="main-content">
+      {% include contacts.html %}
       {{ content }}
       <hr>
       {% include projects.html %}
-      {% include footer.html %}
     </section>
 
     {% if site.google_analytics %}
