@@ -10,14 +10,14 @@
     event: CS 488 Final Project
     icon: code
 
-  - name: Comic Market Artist
-    event: Anime North 2017
-    icon: paint-brush
+  # - name: Comic Market Artist
+  #   event: Anime North 2017
+  #   icon: paint-brush
 
-  - name: Sharks with Legs
-    link: https://dvdfu.itch.io/sharks-with-legs
-    event: TO Jam 12
-    icon: gamepad
+  # - name: Sharks with Legs
+  #   link: https://dvdfu.itch.io/sharks-with-legs
+  #   event: TO Jam 12
+  #   icon: gamepad
 
   - name: Honey Home
     link: https://dvdfu.itch.io/honey-home
@@ -28,29 +28,29 @@
     link: https://medium.com/@dvdfu/practical-juicing-for-game-devs-efe9b06c246b
     icon: book
 
-  - name: Android Developer
-    event: Snapchat (Venice)
-    icon: briefcase
+  # - name: Android Developer
+  #   event: Snapchat (Venice)
+  #   icon: briefcase
 
 - year: 2016
   projects:
 
-  - name: 2016 Illustration Recap
+  - name: 2016 Illustration
     link: https://twitter.com/i/moments/874329318020845569
     icon: paint-brush
 
-  - name: Orbit
-    link: https://github.com/dvdfu/orbit
-    event: GI Jam Fall 2016
-    icon: gamepad
+  # - name: Orbit
+  #   link: https://github.com/dvdfu/orbit
+  #   event: GI Jam Fall 2016
+  #   icon: gamepad
 
   - name: Packer
     link: https://github.com/dvdfu/packer
     icon: code
 
-  - name: Full Stack Developer
-    event: Yahoo! (Sunnyvale)
-    icon: briefcase
+  # - name: Full Stack Developer
+  #   event: Yahoo! (Sunnyvale)
+  #   icon: briefcase
 
   - name: Basebird
     link: https://dvdfu.itch.io/basebird
@@ -60,7 +60,7 @@
 - year: 2015
   projects:
 
-  - name: 2015 Illustration Recap
+  - name: 2015 Illustration
     link: https://twitter.com/i/moments/874336096083222528
     icon: paint-brush
 
@@ -69,32 +69,32 @@
     event: Ludum Dare 34
     icon: gamepad
 
-  - name: Pixel Party
-    link: https://github.com/dvdfu/pixel-party
-    event: Hadoukathon
-    icon: gamepad
+  # - name: Pixel Party
+  #   link: https://github.com/dvdfu/pixel-party
+  #   event: Hadoukathon
+  #   icon: gamepad
 
-  - name: Cardboard Translate
-    link: https://github.com/angelgao/CardboardTranslate
-    event: Hack the North 2015
-    icon: code
+  # - name: Cardboard Translate
+  #   link: https://github.com/angelgao/CardboardTranslate
+  #   event: Hack the North 2015
+  #   icon: code
 
   - name: Space Golf
     link: https://github.com/dvdfu/space-golf
     icon: gamepad
 
-  - name: Unity Developer
-    event: Uken Games (Toronto)
-    icon: briefcase
+  # - name: Unity Developer
+  #   event: Uken Games (Toronto)
+  #   icon: briefcase
 
   - name: Keytar
     link: https://github.com/andyzg/keytar
     event: EngHack Spring 2015
     icon: code
 
-  - name: Comic Market Artist
-    event: Anime North 2015
-    icon: paint-brush
+  # - name: Comic Market Artist
+  #   event: Anime North 2015
+  #   icon: paint-brush
 
   - name: Sushi Ninja
     link: https://github.com/dvdfu/sushi-ninja
@@ -111,10 +111,10 @@
     event: Kik Hack Week Winter 2015
     icon: gamepad
 
-  - name: Filespace
-    link: https://github.com/BlakeBrown/infinitefilespace
-    event: Hack Western 2015
-    icon: code
+  # - name: Filespace
+  #   link: https://github.com/BlakeBrown/infinitefilespace
+  #   event: Hack Western 2015
+  #   icon: code
 
   - name: The Resistance
     link: https://github.com/dvdfu/resistance-web
@@ -126,32 +126,32 @@
     event: Kik Hackathon
     icon: code
 
-  - name: Gardineering
-    link: https://github.com/dvdfu/winter-gi-jam
-    event: GI Jam Winter 2015
-    icon: gamepad
+  # - name: Gardineering
+  #   link: https://github.com/dvdfu/winter-gi-jam
+  #   event: GI Jam Winter 2015
+  #   icon: gamepad
 
-  - name: Web Developer
-    event: Kik (Waterloo)
-    icon: briefcase
+  # - name: Web Developer
+  #   event: Kik (Waterloo)
+  #   icon: briefcase
 
 - year: 2014
   projects:
 
-  - name: 2014 Illustration Recap
+  - name: 2014 Illustration
     link: https://twitter.com/i/moments/874336644777865216
     icon: paint-brush
 
-  - name: Fiery Flight
-    link: https://github.com/dvdfu/fiery-flight
-    event: GI Jam Fall 2014
-    icon: gamepad
+  # - name: Fiery Flight
+  #   link: https://github.com/dvdfu/fiery-flight
+  #   event: GI Jam Fall 2014
+  #   icon: gamepad
 
-  - name: Wordasm
-    link: https://github.com/Nosajool/Wordasm
-    event: Hack the North 2014
-    icon: code
+  # - name: Wordasm
+  #   link: https://github.com/Nosajool/Wordasm
+  #   event: Hack the North 2014
+  #   icon: code
 
-  - name: QA Analyst
-    event: i4i (Toronto)
-    icon: briefcase
+  # - name: QA Analyst
+  #   event: i4i (Toronto)
+  #   icon: briefcase

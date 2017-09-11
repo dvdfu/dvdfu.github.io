@@ -22,14 +22,18 @@
   icon: dribbble
   link: https://dribbble.com/dvdfu
 
-- name: SoundCloud
-  icon: soundcloud
-  link: https://soundcloud.com/dvdfu
-
-- name: Itch.io
-  icon: gamepad
-  link: https://dvdfu.itch.io
+# - name: SoundCloud
+#   icon: soundcloud
+#   link: https://soundcloud.com/dvdfu
+#
+# - name: Itch.io
+#   icon: gamepad
+#   link: https://dvdfu.itch.io
 
 - name: LinkedIn
   icon: linkedin
   link: https://ca.linkedin.com/in/dvdfu
+
+- name: E-Mail
+  icon: envelope
+  link: mailto:davidf1212@gmail.com
