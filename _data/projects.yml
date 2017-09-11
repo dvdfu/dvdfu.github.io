@@ -4,11 +4,13 @@
   - name: China Travel Photography
     link: https://photos.app.goo.gl/8hOHkYHpICtKISaG3
     icon: camera
+    image: china_2017.jpg
 
   - name: Ray Tracer
     link: http://dvdfu.net/cs488-project/
     event: CS 488 Final Project
     icon: code
+    image: cs488.png
 
   # - name: Comic Market Artist
   #   event: Anime North 2017
@@ -68,7 +70,7 @@
     link: https://dvdfu.itch.io/acrodog
     event: Ludum Dare 34
     icon: gamepad
-    # image: gif/acrodog.gif
+    image: acrodog.gif
 
   - name: Pixel Party
     link: https://github.com/dvdfu/pixel-party
@@ -83,7 +85,7 @@
   - name: Space Golf
     link: https://github.com/dvdfu/space-golf
     icon: gamepad
-    # image: gif/space-golf.gif
+    image: space-golf.gif
 
   # - name: Unity Developer
   #   event: Uken Games (Toronto)

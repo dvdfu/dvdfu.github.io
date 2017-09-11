@@ -1,0 +1,13 @@
+<p>
+  <i class="project-icon fa fa-{{ include.icon | default: "square" }}"></i>
+
+  {% if include.link %}
+  <a href="{{ include.link }}">{{ include.name }}</a>
+  {% else %}
+  {{ include.name }}
+  {% endif %}
+
+  {% if include.event %}
+  <span class="project-event">{{ include.event }}</span>
+  {% endif %}
+</p>
