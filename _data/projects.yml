@@ -5,32 +5,28 @@
     link: https://photos.app.goo.gl/8hOHkYHpICtKISaG3
     icon: camera
     image: china_2017.jpg
-
   - title: Ray Tracer
     link: http://dvdfu.net/cs488-project/
     event: CS 488 Final Project
     icon: code
     image: cs488.png
-
+    important: true
   # - title: Comic Market Artist
   #   event: Anime North 2017
   #   icon: paint-brush
-
-  # - title: Sharks with Legs
-  #   link: https://dvdfu.itch.io/sharks-with-legs
-  #   event: TO Jam 12
-  #   icon: gamepad
-
+  - title: Sharks with Legs
+    link: https://dvdfu.itch.io/sharks-with-legs
+    event: TO Jam 12
+    icon: gamepad
   - title: Honey Home
     link: https://dvdfu.itch.io/honey-home
     event: Ludum Dare 38
     icon: gamepad
     image: honey_home.png
-
-  # - title: Practical Juicing for Game Devs
-  #   link: https://medium.com/@dvdfu/practical-juicing-for-game-devs-efe9b06c246b
-  #   icon: book
-
+    important: true
+  - title: Practical Juicing for Game Devs
+    link: https://medium.com/@dvdfu/practical-juicing-for-game-devs-efe9b06c246b
+    icon: book
   # - title: Android Developer
   #   event: Snapchat (Venice)
   #   icon: briefcase
@@ -42,25 +38,23 @@
     link: https://twitter.com/i/moments/874329318020845569
     icon: paint-brush
     image: smash.png
-
-  # - title: Orbit
-  #   link: https://github.com/dvdfu/orbit
-  #   event: GI Jam Fall 2016
-  #   icon: gamepad
-
-  # - title: Packer
-  #   link: https://github.com/dvdfu/packer
-  #   icon: code
-
+    important: true
+  - title: Orbit
+    link: https://github.com/dvdfu/orbit
+    event: GI Jam Fall 2016
+    icon: gamepad
+  - title: Packer
+    link: https://github.com/dvdfu/packer
+    icon: code
   # - title: Full Stack Developer
   #   event: Yahoo! (Sunnyvale)
   #   icon: briefcase
-
   - title: Basebird
     link: https://dvdfu.itch.io/basebird
     event: Ludum Dare 35
     icon: gamepad
     image: basebird.gif
+    important: true
 
 - year: 2015
   projects:
@@ -69,81 +63,72 @@
     link: https://twitter.com/i/moments/874336096083222528
     icon: paint-brush
     image: steven_bomb.png
-
+    important: true
   - title: Acrodog
     link: https://dvdfu.itch.io/acrodog
     event: Ludum Dare 34
     icon: gamepad
     image: acrodog.gif
-
-  # - title: Pixel Party
-  #   link: https://github.com/dvdfu/pixel-party
-  #   event: Hadoukathon
-  #   icon: gamepad
-
-  # - title: Cardboard Translate
-  #   link: https://github.com/angelgao/CardboardTranslate
-  #   event: Hack the North 2015
-  #   icon: code
-
+    important: true
+  - title: Pixel Party
+    link: https://github.com/dvdfu/pixel-party
+    event: Hadoukathon
+    icon: gamepad
+  - title: Cardboard Translate
+    link: https://github.com/angelgao/CardboardTranslate
+    event: Hack the North 2015
+    icon: code
   - title: Space Golf
     link: https://github.com/dvdfu/space-golf
     icon: gamepad
     image: space_golf.gif
-
   # - title: Unity Developer
   #   event: Uken Games (Toronto)
   #   icon: briefcase
-
-  # - title: Keytar
-  #   link: https://github.com/andyzg/keytar
-  #   event: EngHack Spring 2015
-  #   icon: code
-
+  - title: Keytar
+    link: https://github.com/andyzg/keytar
+    event: EngHack Spring 2015
+    icon: code
+    image: keytar.png
   # - title: Comic Market Artist
   #   event: Anime North 2015
   #   icon: paint-brush
-
-  # - title: Sushi Ninja
-  #   link: https://github.com/dvdfu/sushi-ninja
-  #   event: GI Jam Spring 2015
-  #   icon: gamepad
-  #   image: sushi.gif
-
+  - title: Sushi Ninja
+    link: https://github.com/dvdfu/sushi-ninja
+    event: GI Jam Spring 2015
+    icon: gamepad
+    image: sushi.gif
   - title: Sun Slayer
     link: http://dvdfu.itch.io/sun-slayer
     event: Ludum Dare 32
     icon: gamepad
     image: sun_slayer.gif
-
-  # - title: Hop Potato
-  #   link: http://dvdfu.itch.io/hop-potato
-  #   event: Kik Hack Week Winter 2015
-  #   icon: gamepad
-  #   image: hop_potato.gif
-
-  # - title: Filespace
-  #   link: https://github.com/BlakeBrown/infinitefilespace
-  #   event: Hack Western 2015
-  #   icon: code
-
-  # - title: The Resistance
-  #   link: https://github.com/dvdfu/resistance-web
-  #   event: EngHack Winter 2015
-  #   icon: code
-
-  # - title: Match 3
-  #   link: https://github.com/dvdfu/match-3
-  #   event: Kik Hackathon
-  #   icon: code
-  #   image: match_3.png
-
-  # - title: Gardineering
-  #   link: https://github.com/dvdfu/winter-gi-jam
-  #   event: GI Jam Winter 2015
-  #   icon: gamepad
-  #   image: garden_guardian.gif
-
+    important: true
+  - title: Hop Potato
+    link: http://dvdfu.itch.io/hop-potato
+    event: Kik Hack Week Winter 2015
+    icon: gamepad
+    image: hop_potato.gif
+  - title: Filespace
+    link: https://github.com/BlakeBrown/infinitefilespace
+    event: Hack Western 2015
+    icon: code
+    image: filespace.png
+  - title: The Resistance
+    link: https://github.com/dvdfu/resistance-web
+    event: EngHack Winter 2015
+    icon: code
+    image: the_resistance.png
+  - title: Match 3
+    link: https://github.com/dvdfu/match-3
+    event: Kik Hackathon
+    icon: code
+    image: match_3.png
+  - title: Gardineering
+    link: https://github.com/dvdfu/winter-gi-jam
+    event: GI Jam Winter 2015
+    icon: gamepad
+    image: garden_guardian.gif
   # - title: Web Developer
   #   event: Kik (Waterloo)
   #   icon: briefcase
@@ -155,18 +140,17 @@
     link: https://twitter.com/i/moments/874336644777865216
     icon: paint-brush
     image: adventure_time.png
-
-  # - title: Fiery Flight
-  #   link: https://github.com/dvdfu/fiery-flight
-  #   event: GI Jam Fall 2014
-  #   icon: gamepad
-  #   image: fiery_flight.gif
-
-  # - title: Wordasm
-  #   link: https://github.com/Nosajool/Wordasm
-  #   event: Hack the North 2014
-  #   icon: code
-
+    important: true
+  - title: Fiery Flight
+    link: https://github.com/dvdfu/fiery-flight
+    event: GI Jam Fall 2014
+    icon: gamepad
+    image: fiery_flight.gif
+  - title: Wordasm
+    link: https://github.com/Nosajool/Wordasm
+    event: Hack the North 2014
+    icon: code
+    image: wordasm.png
   # - title: QA Analyst
   #   event: i4i (Toronto)
   #   icon: briefcase
