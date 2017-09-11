@@ -10,6 +10,10 @@
     event: CS 488 Final Project
     icon: code
 
+  - name: Comic Market Artist
+    event: Anime North 2017
+    icon: paint-brush
+
   - name: Sharks with Legs
     link: https://dvdfu.itch.io/sharks-with-legs
     event: TO Jam 12
@@ -23,6 +27,10 @@
   - name: Practical Juicing for Game Devs
     link: https://medium.com/@dvdfu/practical-juicing-for-game-devs-efe9b06c246b
     icon: book
+
+  - name: Android Developer
+    event: Snapchat (Venice)
+    icon: briefcase
 
 - year: 2016
   projects:
@@ -39,6 +47,10 @@
   - name: Packer
     link: https://github.com/dvdfu/packer
     icon: code
+
+  - name: Full Stack Developer
+    event: Yahoo! (Sunnyvale)
+    icon: briefcase
 
   - name: Basebird
     link: https://dvdfu.itch.io/basebird
@@ -71,10 +83,18 @@
     link: https://github.com/dvdfu/space-golf
     icon: gamepad
 
+  - name: Unity Developer
+    event: Uken Games (Toronto)
+    icon: briefcase
+
   - name: Keytar
     link: https://github.com/andyzg/keytar
     event: EngHack Spring 2015
     icon: code
+
+  - name: Comic Market Artist
+    event: Anime North 2015
+    icon: paint-brush
 
   - name: Sushi Ninja
     link: https://github.com/dvdfu/sushi-ninja
@@ -111,6 +131,10 @@
     event: GI Jam Winter 2015
     icon: gamepad
 
+  - name: Web Developer
+    event: Kik (Waterloo)
+    icon: briefcase
+
 - year: 2014
   projects:
 
@@ -127,3 +151,7 @@
     link: https://github.com/Nosajool/Wordasm
     event: Hack the North 2014
     icon: code
+
+  - name: QA Analyst
+    event: i4i (Toronto)
+    icon: briefcase

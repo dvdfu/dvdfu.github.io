@@ -6,7 +6,13 @@
       {% if project.icon %}
       <i class="project-icon fa fa-{{ project.icon }}"></i>
       {% endif %}
+
+      {% if project.link %}
       <a class="project" href="{{ project.link }}">{{ project.name }}</a>
+      {% else %}
+      {{ project.name }}
+      {% endif %}
+
       {% if project.event %}
       - {{ project.event }}
       {% endif %}
