@@ -23,19 +23,7 @@
 
     <section class="main-content">
       {{ content }}
-
-      <footer class="site-footer">
-        <!-- <ul>
-        {% for contact in site.data.contacts %}
-          <li>
-            <a href="{{ contact.url }}">
-              <i class="fa fa-{{ contact.icon }} fa-lg"></i>
-              {{ contact.name }}
-            </a>
-          </li>
-        {% endfor %}
-        </ul> -->
-      </footer>
+      {% include footer.html %}
     </section>
 
     {% if site.google_analytics %}

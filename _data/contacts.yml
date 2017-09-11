@@ -13,3 +13,7 @@
 - name: GitHub
   icon: github
   url: https://github.com/dvdfu
+
+# - name: Itch.io
+#   icon: gamepad
+#   url: https://dvdfu.itch.io

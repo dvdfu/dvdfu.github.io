@@ -1,0 +1,7 @@
+<footer class="site-footer">
+  <span>
+  {% for contact in site.data.contacts %}
+    <a class="contact-icon" href="{{ contact.url }}"><i class="fa fa-{{ contact.icon }} fa-3x"></i></a>
+  {% endfor %}
+  </span>
+</footer>

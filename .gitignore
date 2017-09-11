@@ -1,5 +1,1 @@
-node_modules/
-.sass-cache/
-style/font-awesome-*
-*.log
-*.map
+_site
