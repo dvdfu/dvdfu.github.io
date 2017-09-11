@@ -40,6 +40,7 @@
   - name: 2016 Illustration
     link: https://twitter.com/i/moments/874329318020845569
     icon: paint-brush
+    image: smash.png
 
   - name: Orbit
     link: https://github.com/dvdfu/orbit
@@ -58,6 +59,7 @@
     link: https://dvdfu.itch.io/basebird
     event: Ludum Dare 35
     icon: gamepad
+    image: basebird.gif
 
 - year: 2015
   projects:
@@ -65,6 +67,7 @@
   - name: 2015 Illustration
     link: https://twitter.com/i/moments/874336096083222528
     icon: paint-brush
+    image: steven_bomb.png
 
   - name: Acrodog
     link: https://dvdfu.itch.io/acrodog
@@ -85,7 +88,7 @@
   - name: Space Golf
     link: https://github.com/dvdfu/space-golf
     icon: gamepad
-    image: space-golf.gif
+    image: space_golf.gif
 
   # - name: Unity Developer
   #   event: Uken Games (Toronto)
@@ -104,6 +107,7 @@
     link: https://github.com/dvdfu/sushi-ninja
     event: GI Jam Spring 2015
     icon: gamepad
+    image: sushi.gif
 
   - name: Sun Slayer
     link: http://dvdfu.itch.io/sun-slayer
@@ -134,6 +138,7 @@
     link: https://github.com/dvdfu/winter-gi-jam
     event: GI Jam Winter 2015
     icon: gamepad
+    image: garden_guardian.gif
 
   # - name: Web Developer
   #   event: Kik (Waterloo)
@@ -145,6 +150,7 @@
   - name: 2014 Illustration
     link: https://twitter.com/i/moments/874336644777865216
     icon: paint-brush
+    image: adventure_time.png
 
   - name: Fiery Flight
     link: https://github.com/dvdfu/fiery-flight

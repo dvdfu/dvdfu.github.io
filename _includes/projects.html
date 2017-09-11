@@ -1,6 +1,7 @@
 <div>
 {% for group in site.data.projects %}
   <h2>{{ group.year }}</h2>
+  <!-- {% assign projects = group.projects | sort: 'image' | reverse %} -->
   {% for project in group.projects %}
     {% if project.image %}
     <div class="project-image" style="background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0) 50%), url(assets/images/projects/{{ project.image }})">
