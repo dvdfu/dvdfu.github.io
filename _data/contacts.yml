@@ -1,0 +1,15 @@
+- name: Twitter
+  icon: twitter
+  url: https://twitter.com/dvdfu
+
+- name: Tumblr
+  icon: tumblr
+  url: https://dvdfu.tumblr.com
+
+- name: Instagram
+  icon: instagram
+  url: https://www.instagram.com/dvdfu
+
+- name: GitHub
+  icon: github
+  url: https://github.com/dvdfu
