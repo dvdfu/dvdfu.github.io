@@ -2,13 +2,28 @@
 {% for group in site.data.projects %}
   <h2>{{ group.year }}</h2>
   {% for project in group.projects %}
+    {% if project.image %}
+    <div class="project-image" style="background-image: url(assets/images/projects/{{ project.image }})">
+      <p>
+        <i class="project-icon fa fa-{{ project.icon | default: "square" }}"></i>
+
+        {% if project.link %}
+        <a href="{{ project.link }}">{{ project.name }}</a>
+        {% else %}
+        {{ project.name }}
+        {% endif %}
+
+        {% if project.event %}
+        <span class="project-event">{{ project.event }}</span>
+        {% endif %}
+      </p>
+    </div>
+    {% else %}
     <p>
-      {% if project.icon %}
-      <i class="project-icon fa fa-{{ project.icon }}"></i>
-      {% endif %}
+      <i class="project-icon fa fa-{{ project.icon | default: "square" }}"></i>
 
       {% if project.link %}
-      <a class="project" href="{{ project.link }}">{{ project.name }}</a>
+      <a href="{{ project.link }}">{{ project.name }}</a>
       {% else %}
       {{ project.name }}
       {% endif %}
@@ -17,6 +32,7 @@
       <span class="project-event">{{ project.event }}</span>
       {% endif %}
     </p>
+    {% endif %}
   {% endfor %}
 {% endfor %}
 </div>

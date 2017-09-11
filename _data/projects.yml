@@ -68,6 +68,7 @@
     link: https://dvdfu.itch.io/acrodog
     event: Ludum Dare 34
     icon: gamepad
+    # image: gif/acrodog.gif
 
   - name: Pixel Party
     link: https://github.com/dvdfu/pixel-party
@@ -82,6 +83,7 @@
   - name: Space Golf
     link: https://github.com/dvdfu/space-golf
     icon: gamepad
+    # image: gif/space-golf.gif
 
   # - name: Unity Developer
   #   event: Uken Games (Toronto)
