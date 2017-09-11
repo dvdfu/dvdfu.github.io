@@ -1,19 +1,35 @@
 - name: Twitter
   icon: twitter
-  url: https://twitter.com/dvdfu
+  link: https://twitter.com/dvdfu
 
 - name: Tumblr
   icon: tumblr
-  url: https://dvdfu.tumblr.com
+  link: https://dvdfu.tumblr.com
 
 - name: Instagram
   icon: instagram
-  url: https://www.instagram.com/dvdfu
+  link: https://www.instagram.com/dvdfu
 
 - name: GitHub
   icon: github
-  url: https://github.com/dvdfu
+  link: https://github.com/dvdfu
 
-# - name: Itch.io
-#   icon: gamepad
-#   url: https://dvdfu.itch.io
+- name: Medium
+  icon: medium
+  link: https://medium.com/@dvdfu
+
+- name: Dribbble
+  icon: dribbble
+  link: https://dribbble.com/dvdfu
+
+- name: SoundCloud
+  icon: soundcloud
+  link: https://soundcloud.com/dvdfu
+
+- name: Itch.io
+  icon: gamepad
+  link: https://dvdfu.itch.io
+
+- name: LinkedIn
+  icon: linkedin
+  link: https://ca.linkedin.com/in/dvdfu
