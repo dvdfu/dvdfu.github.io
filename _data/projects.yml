@@ -1,10 +1,24 @@
 - year: 2017
   projects:
 
+  - title: 2017 Illustration
+    link: https://twitter.com/i/moments/874328284548521984
+    icon: paint-brush
+    image: undertale.png
+    important: true
+  # - title: Software Engineer
+  #   event: Facebook (Menlo Park)
+  #   icon: briefcase
   - title: China Travel Photography
     link: https://photos.app.goo.gl/8hOHkYHpICtKISaG3
     icon: camera
     image: china_2017.jpg
+  - title: Critter Sitter
+    link: https://dvdfu.itch.io/critters
+    event: Ludum Dare 40
+    icon: gamepad
+    image: critters.gif
+    important: true
   - title: Ray Tracer
     link: http://dvdfu.net/cs488-project/
     event: CS 488 Final Project
