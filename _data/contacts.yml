@@ -2,13 +2,13 @@
   icon: twitter
   link: https://twitter.com/dvdfu
 
-- name: Tumblr
-  icon: tumblr
-  link: https://dvdfu.tumblr.com
-
 - name: Instagram
   icon: instagram
   link: https://www.instagram.com/dvdfu
+
+- name: Tumblr
+  icon: tumblr
+  link: https://dvdfu.tumblr.com
 
 - name: GitHub
   icon: github
