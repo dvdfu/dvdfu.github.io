@@ -1,3 +1,3 @@
-I develop games, illustrate, and play music! I love exploring the intersection between creative expression and technical precision. This website maintains past projects that I'm proud to share.
+I program, design games, illustrate, and play music! I'm passionate about imagining, designing, and sharing fun games. I love exploring the intersection between creative expression and technical precision. Let's make something together!
 
-I study Software Engineering at the University of Waterloo. I've been fortunate to work with great mentors and peers at [Facebook](https://www.facebook.com/), [Snapchat](https://www.snapchat.com/), [Yahoo!](https://www.yahoo.com/), [Uken Games](https://www.uken.com/), and [Kik](https://www.kik.com/). If you're looking for my qualifications, [here is my résumé](/assets/files/resume_f17.pdf).
+This website maintains past projects that I'm proud to share. [Here is my résumé](/assets/files/resume_f17.pdf).
