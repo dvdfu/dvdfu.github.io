@@ -1,6 +1,11 @@
 - year: 2018
   projects:
 
+  - title: The Things That I Am
+    event: PHIL 202 Final Project
+    link: phil202
+    icon: paint-brush
+    image: phil202.jpg
   - title: Chiki's Chase
     link: https://dvdfu.itch.io/chiki
     icon: gamepad
