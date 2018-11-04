@@ -1,6 +1,10 @@
 - year: 2018
   projects:
 
+  - title: Inktober 2018
+    link: inktober2018
+    icon: paint-brush
+    image: inktober2018.jpg
   - title: The Things That I Am
     event: PHIL 202 Final Project
     link: phil202
@@ -163,7 +167,7 @@
   - title: 2014 Illustration
     link: https://twitter.com/i/moments/874336644777865216
     icon: paint-brush
-    image: adventure_time.png
+    image: adventure_time.jpg
   # - title: Fiery Flight
   #   link: https://github.com/dvdfu/fiery-flight
   #   event: GI Jam Fall 2014
