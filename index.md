@@ -1,3 +1,3 @@
-I program, design games, illustrate, and play music! I'm passionate about imagining, designing, and sharing fun games. I love exploring the intersection between creative expression and technical precision. Let's make something together!
+I program, design games, illustrate, and play music. Here are things I've made in the past years that I'm proud to share. Let's make something together!
 
-This website maintains past projects that I'm proud to share. [Here is my résumé](/assets/files/resume_f17.pdf).
+<!--[Here is my résumé](/assets/files/resume_f17.pdf).-->

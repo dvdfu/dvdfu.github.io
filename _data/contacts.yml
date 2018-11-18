@@ -6,9 +6,9 @@
   icon: instagram
   link: https://www.instagram.com/dvdfu
 
-- name: Tumblr
-  icon: tumblr
-  link: https://dvdfu.tumblr.com
+# - name: Tumblr
+#   icon: tumblr
+#   link: https://dvdfu.tumblr.com
 
 - name: GitHub
   icon: github
@@ -30,9 +30,9 @@
 #   icon: gamepad
 #   link: https://dvdfu.itch.io
 
-- name: LinkedIn
-  icon: linkedin
-  link: https://ca.linkedin.com/in/dvdfu
+# - name: LinkedIn
+#   icon: linkedin
+#   link: https://ca.linkedin.com/in/dvdfu
 
 - name: E-Mail
   icon: envelope
