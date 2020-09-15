@@ -1,177 +1,195 @@
+- year: 2020
+  projects:
+    - title: Keylimba
+      link: https://keylimba.carrd.co/
+      icon: gamepad
+      image: keylimba.png
+    - title: Jammery
+      link: https://dvdfu.itch.io/jammery
+      icon: gamepad
+      image: jammery.png
+    - title: What the Firetruck
+      event: Ludum Dare 46
+      link: https://dvdfu.itch.io/what-the-firetruck
+      icon: gamepad
+      image: firetruck.png
+
+- year: 2019
+  projects:
+    - title: 2019 Illustration
+      link: https://twitter.com/i/events/1085819827975909378
+      icon: paint-brush
+      image: obsidian.jpeg
+
 - year: 2018
   projects:
-
-  - title: 2018 Illustration
-    link: https://twitter.com/i/moments/948396373610778624
-    icon: paint-brush
-    image: smash_ultimate.jpg
-  - title: Inktober 2018
-    link: inktober2018
-    icon: paint-brush
-    image: inktober2018.jpg
-  - title: The Things That I Am
-    event: PHIL 202 Final Project
-    link: phil202
-    icon: paint-brush
-    image: phil202.jpg
-  - title: Chiki's Chase
-    link: https://dvdfu.itch.io/chiki
-    icon: gamepad
-    image: chiki.gif
+    - title: 2018 Illustration
+      link: https://twitter.com/i/events/948396373610778624
+      icon: paint-brush
+      image: smash_ultimate.jpg
+    - title: Inktober 2018
+      link: inktober2018
+      icon: paint-brush
+      image: inktober2018.jpg
+    - title: The Things That I Am
+      event: PHIL 202 Final Project
+      link: phil202
+      icon: paint-brush
+      image: phil202.jpg
+    - title: Chiki's Chase
+      link: https://dvdfu.itch.io/chiki
+      icon: gamepad
+      image: chiki.gif
 
 - year: 2017
   projects:
+    - title: 2017 Illustration
+      link: https://twitter.com/i/events/874328284548521984
+      icon: paint-brush
+      image: undertale.png
+    # - title: Software Engineer
+    #   event: Facebook (Menlo Park)
+    #   icon: briefcase
+    # - title: China Travel Photography
+    #   link: https://photos.app.goo.gl/8hOHkYHpICtKISaG3
+    #   icon: camera
+    #   image: china_2017.jpg
+    #   inline: true
+    - title: Critter Sitter
+      link: https://dvdfu.itch.io/critters
+      event: Ludum Dare 40
+      icon: gamepad
+      image: critters.gif
+    - title: Ray Tracer
+      link: http://dvdfu.net/cs488-project
+      event: CS 488 Final Project
+      icon: code
+      image: cs488.png
+    # - title: Comic Market Artist
+    #   event: Anime North 2017
+    #   icon: paint-brush
+    # - title: Sharks with Legs
+    #   link: https://dvdfu.itch.io/sharks-with-legs
+    #   event: TO Jam 12
+    #   icon: gamepad
+    - title: Honey Home
+      link: https://dvdfu.itch.io/honey-home
+      event: Ludum Dare 38
+      icon: gamepad
+      image: honey_home.png
+    - title: Practical Juicing for Game Devs
+      link: https://medium.com/@dvdfu/practical-juicing-for-game-devs-efe9b06c246b
+      icon: book
+      inline: true
 
-  - title: 2017 Illustration
-    link: https://twitter.com/i/moments/874328284548521984
-    icon: paint-brush
-    image: undertale.png
-  # - title: Software Engineer
-  #   event: Facebook (Menlo Park)
-  #   icon: briefcase
-  - title: China Travel Photography
-    link: https://photos.app.goo.gl/8hOHkYHpICtKISaG3
-    icon: camera
-    image: china_2017.jpg
-    inline: true
-  - title: Critter Sitter
-    link: https://dvdfu.itch.io/critters
-    event: Ludum Dare 40
-    icon: gamepad
-    image: critters.gif
-  - title: Ray Tracer
-    link: http://dvdfu.net/cs488-project
-    event: CS 488 Final Project
-    icon: code
-    image: cs488.png
-  # - title: Comic Market Artist
-  #   event: Anime North 2017
-  #   icon: paint-brush
-  # - title: Sharks with Legs
-  #   link: https://dvdfu.itch.io/sharks-with-legs
-  #   event: TO Jam 12
-  #   icon: gamepad
-  - title: Honey Home
-    link: https://dvdfu.itch.io/honey-home
-    event: Ludum Dare 38
-    icon: gamepad
-    image: honey_home.png
-  - title: Practical Juicing for Game Devs
-    link: https://medium.com/@dvdfu/practical-juicing-for-game-devs-efe9b06c246b
-    icon: book
-    inline: true
   # - title: Android Developer
   #   event: Snapchat (Venice)
   #   icon: briefcase
-
 - year: 2016
   projects:
-
-  - title: 2016 Illustration
-    link: https://twitter.com/i/moments/874329318020845569
-    icon: paint-brush
-    image: smash.png
-  # - title: Orbit
-  #   link: https://github.com/dvdfu/orbit
-  #   event: GI Jam Fall 2016
-  #   icon: gamepad
-  # - title: Packer
-  #   link: https://github.com/dvdfu/packer
-  #   icon: code
-  # - title: Full Stack Developer
-  #   event: Yahoo! (Sunnyvale)
-  #   icon: briefcase
-  - title: Basebird
-    link: https://dvdfu.itch.io/basebird
-    event: Ludum Dare 35
-    icon: gamepad
-    image: basebird.gif
+    - title: 2016 Illustration
+      link: https://twitter.com/i/events/874329318020845569
+      icon: paint-brush
+      image: smash.png
+    # - title: Orbit
+    #   link: https://github.com/dvdfu/orbit
+    #   event: GI Jam Fall 2016
+    #   icon: gamepad
+    # - title: Packer
+    #   link: https://github.com/dvdfu/packer
+    #   icon: code
+    # - title: Full Stack Developer
+    #   event: Yahoo! (Sunnyvale)
+    #   icon: briefcase
+    - title: Basebird
+      link: https://dvdfu.itch.io/basebird
+      event: Ludum Dare 35
+      icon: gamepad
+      image: basebird.gif
 
 - year: 2015
   projects:
+    - title: 2015 Illustration
+      link: https://twitter.com/i/events/874336096083222528
+      icon: paint-brush
+      image: steven_bomb.png
+    - title: Acrodog
+      link: https://dvdfu.itch.io/acrodog
+      event: Ludum Dare 34
+      icon: gamepad
+      image: acrodog.gif
+    # - title: Pixel Party
+    #   link: https://github.com/dvdfu/pixel-party
+    #   event: Hadoukathon
+    #   icon: gamepad
+    # - title: Cardboard Translate
+    #   link: https://github.com/angelgao/CardboardTranslate
+    #   event: Hack the North 2015
+    #   icon: code
+    - title: Space Golf
+      link: https://github.com/dvdfu/space-golf
+      icon: gamepad
+      image: space_golf.gif
+      inline: true
+    # - title: Unity Developer
+    #   event: Uken Games (Toronto)
+    #   icon: briefcase
+    # - title: Keytar
+    #   link: https://github.com/andyzg/keytar
+    #   event: EngHack Spring 2015
+    #   icon: code
+    #   image: keytar.png
+    # - title: Comic Market Artist
+    #   event: Anime North 2015
+    #   icon: paint-brush
+    - title: Sushi Ninja
+      link: https://github.com/dvdfu/sushi-ninja
+      event: GI Jam Spring 2015
+      icon: gamepad
+      image: sushi.gif
+      inline: true
+    - title: Sun Slayer
+      link: http://dvdfu.itch.io/sun-slayer
+      event: Ludum Dare 32
+      icon: gamepad
+      image: sun_slayer.gif
+    - title: Hop Potato
+      link: http://dvdfu.itch.io/hop-potato
+      event: Kik Hack Week Winter 2015
+      icon: gamepad
+      image: hop_potato.gif
+      inline: true
+    # - title: Filespace
+    #   link: https://github.com/BlakeBrown/infinitefilespace
+    #   event: Hack Western 2015
+    #   icon: code
+    #   image: filespace.png
+    # - title: The Resistance
+    #   link: https://github.com/dvdfu/resistance-web
+    #   event: EngHack Winter 2015
+    #   icon: code
+    #   image: the_resistance.png
+    # - title: Match 3
+    #   link: https://github.com/dvdfu/match-3
+    #   event: Kik Hackathon
+    #   icon: code
+    #   image: match_3.png
+    - title: Gardineering
+      link: https://github.com/dvdfu/winter-gi-jam
+      event: GI Jam Winter 2015
+      icon: gamepad
+      image: garden_guardian.gif
+      inline: true
 
-  - title: 2015 Illustration
-    link: https://twitter.com/i/moments/874336096083222528
-    icon: paint-brush
-    image: steven_bomb.png
-  - title: Acrodog
-    link: https://dvdfu.itch.io/acrodog
-    event: Ludum Dare 34
-    icon: gamepad
-    image: acrodog.gif
-  # - title: Pixel Party
-  #   link: https://github.com/dvdfu/pixel-party
-  #   event: Hadoukathon
-  #   icon: gamepad
-  # - title: Cardboard Translate
-  #   link: https://github.com/angelgao/CardboardTranslate
-  #   event: Hack the North 2015
-  #   icon: code
-  - title: Space Golf
-    link: https://github.com/dvdfu/space-golf
-    icon: gamepad
-    image: space_golf.gif
-    inline: true
-  # - title: Unity Developer
-  #   event: Uken Games (Toronto)
-  #   icon: briefcase
-  # - title: Keytar
-  #   link: https://github.com/andyzg/keytar
-  #   event: EngHack Spring 2015
-  #   icon: code
-  #   image: keytar.png
-  # - title: Comic Market Artist
-  #   event: Anime North 2015
-  #   icon: paint-brush
-  - title: Sushi Ninja
-    link: https://github.com/dvdfu/sushi-ninja
-    event: GI Jam Spring 2015
-    icon: gamepad
-    image: sushi.gif
-    inline: true
-  - title: Sun Slayer
-    link: http://dvdfu.itch.io/sun-slayer
-    event: Ludum Dare 32
-    icon: gamepad
-    image: sun_slayer.gif
-  - title: Hop Potato
-    link: http://dvdfu.itch.io/hop-potato
-    event: Kik Hack Week Winter 2015
-    icon: gamepad
-    image: hop_potato.gif
-    inline: true
-  # - title: Filespace
-  #   link: https://github.com/BlakeBrown/infinitefilespace
-  #   event: Hack Western 2015
-  #   icon: code
-  #   image: filespace.png
-  # - title: The Resistance
-  #   link: https://github.com/dvdfu/resistance-web
-  #   event: EngHack Winter 2015
-  #   icon: code
-  #   image: the_resistance.png
-  # - title: Match 3
-  #   link: https://github.com/dvdfu/match-3
-  #   event: Kik Hackathon
-  #   icon: code
-  #   image: match_3.png
-  - title: Gardineering
-    link: https://github.com/dvdfu/winter-gi-jam
-    event: GI Jam Winter 2015
-    icon: gamepad
-    image: garden_guardian.gif
-    inline: true
   # - title: Web Developer
   #   event: Kik (Waterloo)
   #   icon: briefcase
-
 - year: 2014
   projects:
-
-  - title: 2014 Illustration
-    link: https://twitter.com/i/moments/874336644777865216
-    icon: paint-brush
-    image: adventure_time.jpg
+    - title: 2014 Illustration
+      link: https://twitter.com/i/events/874336644777865216
+      icon: paint-brush
+      image: adventure_time.jpg
   # - title: Fiery Flight
   #   link: https://github.com/dvdfu/fiery-flight
   #   event: GI Jam Fall 2014
